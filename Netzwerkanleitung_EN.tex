@@ -12,6 +12,8 @@
 \usepackage[top=1.5cm,bottom=2.5cm,left=1.5cm,right=1.5cm]{geometry}
 %\usepackage[margin=2cm]{geometry}
 \usepackage{hyperref}
+% For emphasizing the names of options, buttons, tabs, etc. which should be set apart from the rest of the text
+\newcommand{\optemph}[1]{\textbf{#1}}
 
 
 \title{Student residence Studentenstadt Freimann:\\
@@ -31,56 +33,56 @@
 
 \section*{General information about your Internet connection}
 
-This set-up guide will help you to configure your computer to access the Studentenstadt network as well as the Internet. Before attempting to connect to the Internet please read the terms of use which can be found at the end of your housing contract.
+This set-up guide will help you to configure your computer to access the Studentenstadt network as well as the Internet. Before attempting to connect to the Internet please read the terms of use, which can be found at the end of your housing contract.
 
-To access the Internet, you require a computer with an ethernet connector (most computers have this feature built-in). Additionally you will need a network cable (RJ-45 patch cable) to connect your computer to the network box located on the wall of your room. Should you not have a network cable, you can purchase a cable from the StuStaNet. See further down for more information
+To access the Internet you will require a computer with an ethernet connector (most computers have this feature built-in). Additionally, you will need a network cable (RJ-45 patch cable) to connect your computer to the network outlet located on the wall of your room. Should you not have a network cable, you can purchase a cable from the StuStaNet. See below for more information
 
-You are responsible for your computer's network activity. You must ensure that it does not pose a threat to any other computer on the network and that it is secured and protected from possible virus- and malware infection. Please note the following points:
+You are responsible for your computer's network activity. You must ensure that it does not pose a threat to any other computer on the network and that it is secured and protected from possible virus- and malware infection. This involves:
 \begin{itemize}
-    \item Keep your computer updated with the latest security updates
-    \item Update your Anti-Virus program regularly
-    \item Use a personal firewall
+    \item Keeping your computer updated with the latest security updates
+    \item Updating your anti-virus program regularly
+    \item Using a personal firewall
 \end{itemize}
-If the StuSta detects that your computer is infected by a virus and poses a threat to the computer network, your Internet connectivity will be cut off.
+If the StuSta detects that your computer is infected by a virus and poses a threat to the computer network, your Internet connection will be cut off.
 
 \begin{em}
-If your computer shows these symptoms repeatedly, your Internet connectivity will be permanently terminated.
+In case of repeated infractions, your Internet connection will be permanently terminated.
 \end{em}
 
-These drastic measures need to be taken, as the entire network can be crippled by one infected computer. Furthermore, the Leibnitz-Rechenzentrum, that provides the Studentenstadt with Internet access, will block all Internet traffic from the entire Studentenstadt, if a computer virus is detected.
+These drastic measures are necessary because the entire network can be crippled by a single infected computer. Furthermore, the Leibniz Supercomputing Centre (Leibniz-Rechenzentrum, LRZ), which provides the Studentenstadt with Internet access, will block all Internet traffic from the entire Studentenstadt if they detect a computer virus.
 
-\emph{Please note:} The StuStaNet recommends that if you are a beginner and you don't have the know-how of keeping a Windows system secure, you should consider installing a linux operating system such as Ubuntu Linux. Download Ubuntu from \url{http://www.ubuntu.com}.
+\emph{Please note:} If you are a beginner and don't have the technical know-how necessary to keep a Windows system secure, the StuStaNet recommends that you consider installing a GNU/Linux operating system such as Ubuntu. You can download Ubuntu at \url{http://www.ubuntu.com}.
 
 
 \section*{Membership in the StuStaNet~e.V.}
 
-The membership in the StuStaNet~e.V. is a once-off fee of \EUR{10} and has a number of advantages such as in addition to the Proxy-Internet, the "Real Internet" over a masquerader, an e-mail address, webspace with PHP and database support\footnote{\url{http://stusta-wiki.de/Services}}.
+Membership in the StuStaNet~e.V. requires a one-time fee of \EUR{10} and has a number of advantages including (in addition to Internet via Proxy), full Internet over a NAT masquerader, your own e-mail address, webspace with PHP and database support\footnote{\url{http://stusta-wiki.de/Services}}.
 
-You can join the StuStaNet~e.V. in one of our consultation hours, which are Mondays and Thursdays from 19.00 to 19.30 in the blue house, room 0028, during the semester.
+You can join the StuStaNet~e.V. at one of our office hours, which are Mondays and Thursdays from 19.00 to 19.30 in the Blue House (House \#11), room 0028, during the semester (during breaks only Thursdays).
 
-If you are interested in our network and our servers or if you would like to contribute some ideas, you can become a house administrator (elections are at the beginning of each semester in the different houses) or just come past our monthly meeting (Adminrat). This meeting takes place on the first Thursday of every month at 20.00 in the Teestube\footnote{The Teestube is located in the 20th floor of the Hanns Seidel Hauses (HSH), Christoph-Probst-Str. 16}.
+If you are interested in our network and our servers or if you would just like to contribute some ideas, you can become a house administrator (elections are at the beginning of each semester in each house) or just visit our monthly meeting (Adminrat). This meeting takes place on the first Thursday of every month at 20.00 in the Teestube\footnote{The Teestube is located in the 20th floor of the Hanns Seidel Hauses (HSH), Christoph-Probst-Str. 16}. Although the meetings are usually held in German, we can certainly make accommodations for non-German speakers.
 
 \section*{More Information}
 
-For problems please consult the Stusta-Wiki and the Infoseite:
+If you are experiencing problems please consult the Stusta-Wiki and the Info-Site:
 
 \begin{center}
   \begin{tabularx}{\linewidth}{|lX|}
     \hline
-    \url{http://stusta-wiki.de/} & Network help, information about living in the Studentenstadt, Shopping in the area, Doctors, Nightlife..\\
+    \url{http://stusta-wiki.de/Main_Page} & Network help, information about living in the Studentenstadt, Shopping in the area, Doctors, Nightlife\dots\\
     \hline
-    \url{http://info.stusta.mhn.de/} & Announcements and general information about the StuSta\\
+    \url{http://info.stusta.mhn.de/} & Announcements and general information about the StuSta. Unfortunately, there's no English version yet.\\
     \hline
   \end{tabularx}
 \end{center}
-Should you experience problems configuring your Internet access, you can contact a house administrator. A list of house administrators is located on the ground floor of your house.
+Should you experience problems configuring your Internet access, you can contact a house administrator. A list of house administrators is on display on the ground floor of your house.
 
-Keep in mind that the administrators are only responsible for network-related problems.
+Keep in mind that the administrators are only responsible for network-related problems, i.e. problems directly involving your connection to the Internet and other computers in the StuStaNet.
 
 \newpage
 \section*{Tips on securing your computer}
 
-Here are a few tips on securing your computer against harmfull software.
+Here are a few tips on securing your computer against harmful software.
 
 \subsection*{Anti virus programs}
 \paragraph*{Windows}
@@ -95,17 +97,17 @@ Here are a few tips on securing your computer against harmfull software.
     \hline
     Sophos Antivirus & \url{http://sophos.lrz-muenchen.de/} & Commercial software which is supplied by the LRZ, that can be used for free by students\\
     \hline
-    avast! & \url{http://www.avast.de/} & Home Edition free for private use\\
+    avast! & \url{http://www.avast.com/} & Home Edition free for private use\\
     \hline
   \end{tabularx}
 \end{center}
 
-There are numerous more anti virus programs which however are commercial and require a license such as Kaspersky, Norton and McAffee.
+There are numerous other anti-virus programs such as Kaspersky, Norton and McAffee. However, these programs are commercial and require a paid license.
 
 \paragraph*{Linux and MacOS X (Apple)}
 
-There is no need to use an anti virus package with either of these operating systems. Due to the small market capitalization and different software architecture, these platforms are virus-free (for now).
-\subsection*{Antispywareprogramme}
+There is no need to use an anti virus package with either of these operating systems. Due to their small market share and different software architecture, these platforms are mostly virus-free (for now). There are still programs available to prevent your computer from spreading Windows viruses; the programs listed above may have such versions for these systems.
+\subsection*{Anti-spyware Programs}
 
 Spyware is used to spy on users and to collect personal information. You can find more information on Wikipedia\footnote{\url{http://en.wikipedia.org/wiki/Spyware}}.
 
@@ -114,7 +116,7 @@ Spyware is used to spy on users and to collect personal information. You can fin
     \hline
     Name & Website & Description\\
     \hline \hline
-    Windows Defender & \url{http://www.microsoft.com/germany/windows/products/winfamily/defender/default.mspx} & Integrated in Microsoft Security Essentials\\
+    Windows Defender & \url{http://www.microsoft.com/en-us/download/details.aspx?id=17} & Integrated in Microsoft Security Essentials\\
     \hline
     Spybot, Search \& Destroy & \url{http://www.safer-networking.org/} & Free for private use\\
     \hline
@@ -123,28 +125,28 @@ Spyware is used to spy on users and to collect personal information. You can fin
   \end{tabularx}
 \end{center}
 
-There are numerous more anti spyware programs, most of which are commercial software. These usually come in combination with a firewall or anti virus program.
+There are numerous other anti-spyware programs, most of which are commercial software. These usually come in combination with a firewall or anti virus program.
 
 \subsection*{Personal Firewalls}
 
-A firewall controls the connection between a computer and the network to which the computer is connected to. You can find more information on Wikipedia\footnote{\url{http://en.wikipedia.org/wiki/Personal\_Firewall}}.
+A firewall controls the connection between a computer and the network to which the computer is connected. You can find more information on Wikipedia\footnote{\url{http://en.wikipedia.org/wiki/Personal\_Firewall}}.
 
-Almost every anti virus program has an integrated firewall and even anti spyware software.
+Almost every anti-virus program, and even some anti-spyware software, has an integrated firewall .
 
-In general, the integrated firewall of an operating system is not enough to ensure complete protection.
+In general, the integrated firewall of an operating system is not sufficient to ensure complete protection.
 \newpage
 
 \section*{Network configuration}
 
-Each network point is assigned 8 IP addresses and the IP range is marked on the outlets. If this isn't the case or if the sticker is unreadable, please refer to the management.
+Each network outlet is assigned eight IP addresses and the IP range is marked on the outlets. If the sticker is unreadable or missing, please refer to the administration.
 
 \subsection*{Overview}
 
-To successfully connect to the Internet you need to ensure the following:
+To successfully connect to the Internet you need to follow these steps:
 \begin{itemize}
-    \item The connection to the network point
-    \item Configuration of the network settings in your operating system
-    \item Entry of proxy information~/ proxy script into your Internet browser
+    \item Connect to the network outlet (Ethernet jack)
+    \item Configure the network settings in your operating system
+    \item Enter proxy information~/ proxy script into your Web browser
 \end{itemize}
 
 
@@ -170,19 +172,19 @@ To successfully connect to the Internet you need to ensure the following:
   \end{tabularx}
 \end{center}
 
-You must either use the proxy script or the manual proxy configuration although the use of the \emph{proxy script} is the preferred method.
+You must use either the proxy script (preferred) or the manual proxy configuration.
 
-\subsection*{Connection to the network point}
+\subsection*{Connection to the network outlet}
 
-Only use the left network connection point!
+You should only use the left Ethernet socket.
 
-Beware! It is \emph{prohibited} to connect a telephone, ISDN equipment or any similar devices to the left network connection point as these cause massive network outages in the Sudentenstadt and can cause damage to network hardware.
+\emph{Attention}: It is \emph{prohibited} to connect a telephone, ISDN equipment or any similar devices to the left network connection point as these cause massive network disruptions in the Sudentenstadt and can cause damage to our network hardware.
 
 \subsection*{E-mail, Skype, ICQ, Online games, ...}
 
-The Internet connection in the Sudentenstadt is intended for educational purposes only.
+The Internet connection in the Sudentenstadt is intended for academic and scientific purposes only.
 
-The standard Internet access in the Studentenstadt is limited to browsing only (Connections via the HTTP proxy) as well as internal connections to the Munich Scientific Network. Sending e-mail over POP3~/ IMAP, using instant messaging and playing online games only works with a StuStaNet~e.V. membership (see above).
+The standard Internet access in the Studentenstadt is limited to browsing only (Connections via the HTTP proxy) as well as internal connections to the Munich Scientific Network (Münchner Wissenschaftsnetz, MWN). Sending e-mail over POP3~/ IMAP, using instant messaging and playing online games is only possible with a StuStaNet~e.V. membership (see above).
 
 
 \newpage
@@ -197,10 +199,10 @@ The standard Internet access in the Studentenstadt is limited to browsing only (
 \section*{Step by step instructions}
 \subsection*{Ubuntu settings}
 \begin{enumerate}
-    \item Open the network configuration dialog by clicking on System $\rightarrow$ Settings $\rightarrow$ Network Settings.
-    \item Select your network card in the first tab (normally eth0) and click on edit.
-    \item Click on the IPv4-Settings tab and change the method to Manually.
-    \item Under addresses click on Add.
+	\item Open the network configuration dialog by clicking on \optemph{System} $\rightarrow$ \optemph{Settings} $\rightarrow$ \optemph{Network Settings}.
+	\item Select your network card in the first tab (normally eth0) and click on \optemph{Edit}.
+	\item Click on the IPv4-Settings tab and change the method to \optemph{Manually}.
+	\item Under \optemph{Addresses} click on Add.
       \begin{figure}[h!]
         \centering
         \begin{minipage}[c]{0.45\linewidth}
@@ -214,14 +216,14 @@ The standard Internet access in the Studentenstadt is limited to browsing only (
           \vspace{-10pt}
         \end{minipage}
       \end{figure}
-    \item Now type in the IP address, the subnet mask, the gateway, the DNS and the search domain. The DNS server addresses are \nolinkurl{10.150.127.2} and \nolinkurl{10.150.125.2}, the search domain is \nolinkurl{stusta.mhn.de} and the subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the sticker on the network point. Confirm the settings with OK and close the window.
+  \item Now enter the IP address, the subnet mask, the gateway, the DNS and the search domain. The DNS server addresses are \nolinkurl{10.150.127.2} and \nolinkurl{10.150.125.2}, the search domain is \nolinkurl{stusta.mhn.de} and the subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the sticker on the network outlet. Confirm the settings with \optemph{OK} and close the window.
 \end{enumerate}
 
 \paragraph*{Global proxy settings}
 You can define a global proxy server in Ubuntu so that you don't have to configure it for each browser individually.
 \begin{enumerate}
-    \item Open the network proxy settings by clicking on System $\rightarrow$ Settings $\rightarrow$ Network Proxy.
-    \item At the bottom of the window, mark the automatic proxy configuration box and enter this auto configuration URL: \url{http://wpad.stusta.mhn.de/proxy.pac}\ . Close the window.
+	\item Open the network proxy settings by clicking on \optemph{System} $\rightarrow$ \optemph{Settings} $\rightarrow$ \optemph{Network Proxy}.
+    \item At the bottom of the window, mark the automatic proxy configuration box and enter the auto-configuration URL: \url{http://wpad.stusta.mhn.de/proxy.pac}\ . Close the window to save the settings.
 \end{enumerate}
 $\rightarrow$ Your Internet access is now configured.
 
@@ -240,26 +242,26 @@ $\rightarrow$ Your Internet access is now configured.
 \section*{Step by step instructions}
 \subsection*{Windows settings}
 \begin{enumerate}
-    \item Open Control Panel by clicking on Start $\rightarrow$ Control Panel.
+	\item Open Control Panel by clicking on \optemph{Start} $\rightarrow$ \optemph{Control Panel}.
 \end{enumerate}
 \vspace{-15pt}
 \paragraph*{Windows XP}
 \begin{enumerate}
      \setcounter{enumi}{1}
-     \item Click on Network and Internet Connections.
-     \item Click on Network Connections.
-     \item Right click on the Local Area Connection and select properties.
+     \item Click on \optemph{Network and Internet Connections}.
+	 \item Click on \optemph{Network Connections}.
+	 \item Right click on the \optemph{Local Area Connection} and select \optemph{Properties}.
 \end{enumerate}
 $\rightarrow$ Continue at point 5.
 \vspace{-10pt}
 \paragraph*{Windows Vista}
 \begin{enumerate}
     \setcounter{enumi}{1}
-    \item Click on "Network and Internet" then on "View network status and tasks".
-    \item Click on "Change adapter settings" and then right click on the Local Area Connection and select properties.
+    \item Click on \optemph{Network and Internet} then on \optemph{View network status and tasks}.
+	\item Click on \optemph{Change adapter settings} and then right click on the \optemph{Local Area Connection} and select \optemph{Properties}.
     \setcounter{enumi}{4}
-    \item Select Internet Protocol Verson 4 (TCP/IPv4) (Windows Vista)/ Internet Protocol  (TCP/IP) (Windows XP) and click on Properties.
-    \item Now type in the IP address, the subnet mask, the Default gateway and the DNS Server. The DNS Server addresses are \nolinkurl{10.150.127.2} and \nolinkurl{10.150.125.2}, the Subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the sticker on the network point.
+\item Select \optemph{Internet Protocol Verson 4 (TCP/IPv4)} (Windows Vista)/ \optemph{Internet Protocol  (TCP/IP)} (Windows XP) and click on \optemph{Properties}.
+    \item Now type in the IP address, the subnet mask, the Default gateway and the DNS Server. The DNS Server addresses are \nolinkurl{10.150.127.2} and \nolinkurl{10.150.125.2}, the Subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the sticker on the network outlet.
       \begin{figure}[h!]
 	\centering
         \vspace{-5pt}
@@ -275,7 +277,7 @@ $\rightarrow$ Continue at point 5.
       \vspace{-15pt}
       \end{figure}
     \item Click on Advanced and click on the DNS tab. Klicken Sie auf Erweitert und wählen im folgenden Dialog den Reiter DNS aus. Type \nolinkurl{stusta.mhn.de} in the DNS suffix for this connection field.
-    \item Confirm the settings with OK and close the window.
+	\item Confirm the settings with \optemph{OK} and close the window.
 \end{enumerate}
 $\rightarrow$ Continue with the browser settings.
 
@@ -293,10 +295,10 @@ $\rightarrow$ Continue with the browser settings.
 \section*{Step by step instructions}
 \subsection*{Mac OS X settings}
 \begin{enumerate}
-    \item Click on the Apple logo (top left) and select System Preferences $\rightarrow$ Network.
-    \item Select the Ethernet connection.
-    \item Set the Configure IPv4 drop-down box to Manually.
-    \item Now type in the IP address, the subnet mask, the gateway, the DNS and the search domain. The DNS server addresses are \nolinkurl{10.150.127.2} and \nolinkurl{10.150.125.2}, the search domain is \nolinkurl{stusta.mhn.de} and the subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the sticker on the network point. Confirm the settings with Apply.
+	\item Click on the \optemph{Apple logo} (top left) and select \optemph{System Preferences} $\rightarrow$ \optemph{Network}.
+	\item Select the \optemph{Ethernet} connection.
+	\item Set the \optemph{Configure IPv4} drop-down box to \optemph{Manually}.
+	\item Now type in the IP address, the subnet mask, the gateway, the DNS and the search domain. The DNS server addresses are \nolinkurl{10.150.127.2} and \nolinkurl{10.150.125.2}, the search domain is \nolinkurl{stusta.mhn.de} and the subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the sticker on the network outlet. Confirm the settings with \optemph{Apply}.
       \begin{figure}[h!]
       \centering
 %      \vspace{-5pt}
@@ -314,7 +316,7 @@ $\rightarrow$ Continue with the browser settings.
 \end{enumerate}
 
 \paragraph*{Global proxy settings}
-You can define a global proxy server in Mac OS X so that you don't have to configure it for each browser individually, however Firefox still needs an individual configuration (see Browser settings)
+You can define a global proxy server in Mac OS X so that you don't have to configure it for each browser individually. Firefox, however, still needs an individual configuration (see Browser settings)
 %\begin{wrapfigure}{r}{0.4\textwidth}
 %  \vspace{-20pt}
 %  \begin{center}
@@ -325,8 +327,8 @@ You can define a global proxy server in Mac OS X so that you don't have to confi
 %  \vspace{-10pt}
 %\end{wrapfigure}
 \begin{enumerate}
-    \item Click on Advanced and select the Proxies tab
-    \item Mark the checkbox next to Automatic Proxy Configuration and type in this URL \url{http://wpad.stusta.mhn.de/proxy.pac}\ . Click on OK and select Apply one more time. You can now close System Preferences.
+	\item Click on \optemph{Advanced} and select the \optemph{Proxies} tab
+	\item Mark the checkbox next to \optemph{Automatic Proxy Configuration} and type in the URL \url{http://wpad.stusta.mhn.de/proxy.pac}\ . Click on \optemph{OK} and select \optemph{Apply} one more time. You can now close System Preferences.
 \end{enumerate}
 $\rightarrow$ Your Internet access is now configured.
 
@@ -347,11 +349,11 @@ $\rightarrow$ Your Internet access is now configured.
 \subsection*{\includegraphics[height=1.2cm,keepaspectratio]{Bilder/Firefox_35_logo} Mozilla Firefox}
 \begin{enumerate}
     \item Start Firefox.
-    \item Click on Edit $\rightarrow$ Preferences.
-    \item Click on advanced and select the Network tab.
-    \item Click on Settings.
-    \item Select the bottom most radio button and use \\ \url{http://wpad.stusta.mhn.de/proxy.pac} as the Automatic proxy configuration URL.
-    \item Confirm with OK and close the remaining windows.
+	\item Click on \optemph{Edit} $\rightarrow$ \optemph{Preferences}.
+	\item Click on \optemph{Advanced} and select the \optemph{Network} tab.
+	\item Click on \optemph{Settings}.
+    \item Select the bottommost option and use \\ \url{http://wpad.stusta.mhn.de/proxy.pac} as the Automatic proxy configuration URL.
+	\item Confirm with \optemph{OK} and close the remaining windows.
 \end{enumerate}
 $\rightarrow$ Your Internet access is now configured.
 
@@ -369,10 +371,10 @@ $\rightarrow$ Your Internet access is now configured.
 \subsection*{\includegraphics[height=1.2cm,keepaspectratio]{Bilder/Internet_Explorer_7_Logo} Internet Explorer}
 \begin{enumerate}
     \item Start Internet Explorer.
-    \item Click on Tools and select Internet Options.
-    \item In the Connections tab, select the LAN Settings button.
-    \item Mark the Use automatic configuration script checkbox and type in this URL: \\ \url{http://wpad.stusta.mhn.de/proxy.pac}
-    \item Confirm with OK and close the remaining windows.
+	\item Click on \optemph{Tools} and select \optemph{Internet Options}.
+	\item In the \optemph{Connections} tab, select the \optemph{LAN Settings} button.
+	\item Mark the \optemph{Use automatic configuration script} checkbox and type in the URL: \\ \url{http://wpad.stusta.mhn.de/proxy.pac}
+	\item Confirm with \optemph{OK} and close the remaining windows.
 \end{enumerate}
 $\rightarrow$ Your Internet access is now configured.
 
@@ -390,9 +392,9 @@ $\rightarrow$ Your Internet access is now configured.
 \subsection*{\includegraphics[height=1.2cm,keepaspectratio]{Bilder/Opera_O} Opera}
 \begin{enumerate}
     \item Start Opera.
-    \item Click on Tools and select Settings $\rightarrow$ Preferences.
-    \item Click on the Advanced tab, select the Network category on the left and click on the Proxy servers button.
-    \item Mark the automatic proxy configuration script checkbox and type in this URL: \\ \url{http://wpad.stusta.mhn.de/proxy.pac}
+	\item Click on \optemph{Tools} and select \optemph{Settings} $\rightarrow$ \optemph{Preferences}.
+	\item Click on the \optemph{Advanced} tab, select the \optemph{Network} category on the left and click on the \optemph{Proxy servers} button.
+	\item Mark the \optemph{Use automatic proxy configuration script} checkbox and type in this URL: \\ \url{http://wpad.stusta.mhn.de/proxy.pac}
     \item Close both windows by clicking on OK.
 \end{enumerate}
 $\rightarrow$ Your Internet access is now configured.
