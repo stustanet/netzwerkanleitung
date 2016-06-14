@@ -16,7 +16,7 @@
 \newcommand{\optemph}[1]{\textbf{#1}}
 
 
-\title{Student residence Studentenstadt Freimann:\\
+\title{Student residence Max-Bill:\\
        Internet configuration guide}
 \date{\today}
 
@@ -33,7 +33,7 @@
 
 \section*{General information about your Internet connection}
 
-This set-up guide will help you to configure your computer to access the Studentenstadt network as well as the Internet. Before attempting to connect to the Internet please read the terms of use, which can be found at the end of your housing contract.
+This set-up guide will help you to configure your computer to access the Max-Bill network as well as the Internet. Before attempting to connect to the Internet please read the terms of use, which can be found at the end of your housing contract.
 
 To access the Internet you will require a computer with an ethernet connector (most computers have this feature built-in). Additionally, you will need a network cable (RJ-45 patch cable) to connect your computer to the network outlet located on the wall of your room. Should you not have a network cable, you can purchase a cable from the StuStaNet. See below for more information
 
@@ -49,7 +49,7 @@ If the StuSta detects that your computer is infected by a virus and poses a thre
 In case of repeated infractions, your Internet connection will be permanently terminated.
 \end{em}
 
-These drastic measures are necessary because the entire network can be crippled by a single infected computer. Furthermore, the Leibniz Supercomputing Centre (Leibniz-Rechenzentrum, LRZ), which provides the Studentenstadt with Internet access, will block all Internet traffic from the entire Studentenstadt if they detect a computer virus.
+These drastic measures are necessary because the entire network can be crippled by a single infected computer. Furthermore, the Leibniz Supercomputing Centre (Leibniz-Rechenzentrum, LRZ), which provides the Max-Bill residence with Internet access, will block all Internet traffic from the entire residence if they detect a computer virus.
 
 \emph{Please note:} If you are a beginner and don't have the technical know-how necessary to keep a Windows system secure, the StuStaNet recommends that you consider installing a GNU/Linux operating system such as Ubuntu. You can download Ubuntu at \url{http://www.ubuntu.com}.
 
@@ -58,7 +58,7 @@ These drastic measures are necessary because the entire network can be crippled 
 
 Membership in the StuStaNet~e.V. requires a one-time fee of \EUR{20} and has a number of advantages including (in addition to Internet via Proxy), full Internet over a NAT masquerader, your own e-mail address, webspace with PHP and database support\footnote{\url{http://stusta-wiki.de/Services}}.
 
-You can join the StuStaNet~e.V. at one of our office hours, which are Mondays and Thursdays from 19.00 to 19.30 in the Blue House (House \#11), room 0028, during the semester (during breaks only Thursdays).
+You can join the StuStaNet~e.V. at one of our network administrators or at our office hours, which are Mondays and Thursdays from 19.00 to 19.30 in the Blue House (House \#11) of Studentenstadt, room 0028, during the semester (during breaks only Thursdays).
 
 If you are interested in our network and our servers or if you would just like to contribute some ideas, you can become a network administrator (elections are at the beginning of each semester in each house) or just visit our monthly meeting (Adminrat). This meeting takes place on the first Thursday of every month at 20.00 in the Hackerspace\footnote{2nd floor, House 10, Hans-Leipelt-Str. 7}. Although the meetings are usually held in German, we can certainly make accommodations for non-German speakers.
 
@@ -175,19 +175,19 @@ To successfully connect to the Internet you need to follow these steps:
     \hline
     Setting & Value & Example \\
     \hline \hline
-    IP address & \nolinkurl{10.150.xxx.yyy} - \nolinkurl{10.150.xxx.zzz}, \newline 8 addresses are available which are marked on the network point & \nolinkurl{10.150.243.16} - \nolinkurl{10.150.243.23} \\
+    IP address & \nolinkurl{10.148.xxx.yyy} - \nolinkurl{10.148.xxx.zzz}, \newline 8 addresses are available which are marked on the network point & \nolinkurl{10.148.243.16} - \nolinkurl{10.148.243.23} \\
     \hline
     Subnet mask & \nolinkurl{255.255.255.0} & \\
     \hline
-    Standard gateway & \nolinkurl{10.150.xxx.254} \newline first three blocks like the IP address, fourth block \nolinkurl{254} & \nolinkurl{10.150.243.254} \\
+    Standard gateway & \nolinkurl{10.148.xxx.254} \newline first three blocks like the IP address, fourth block \nolinkurl{254} & \nolinkurl{10.148.243.254} \\
     \hline
-    DNS server (Nameserver) & \nolinkurl{10.150.127.2} \newline \nolinkurl{10.150.125.2} & \\
+    DNS server (Nameserver) & \nolinkurl{10.148.8.2} & \\
     \hline
     DNS suffix (Domainname) & \nolinkurl{stusta.mhn.de} & \\
     \hline
-    Proxy script & \multicolumn{2}{l|}{\nolinkurl{http://wpad.stusta.mhn.de/proxy.pac}} \\
+    Proxy script & \multicolumn{2}{l|}{\nolinkurl{http://wpad.mb67.stusta.mhn.de/proxy.pac}} \\
     \hline
-    Proxy server (manual) & \multicolumn{2}{l|}{\nolinkurl{http://proxy.stusta.mhn.de:3128}} \\
+    Proxy server (manual) & \multicolumn{2}{l|}{\nolinkurl{http://proxy.mb67.stusta.mhn.de:3128}} \\
     \hline
   \end{tabularx}
 \end{center}
@@ -204,7 +204,7 @@ You should only use the left Ethernet socket.
 
 The Internet connection in the Sudentenstadt is intended for academic and scientific purposes only.
 
-The standard Internet access in the Studentenstadt is limited to browsing only (Connections via the HTTP proxy) as well as internal connections to the Munich Scientific Network (Münchner Wissenschaftsnetz, MWN). Sending e-mail over POP3~/ IMAP, using instant messaging and playing online games is only possible with a StuStaNet~e.V. membership (see above).
+The standard Internet access in the Max-Bill residence is limited to browsing only (Connections via the HTTP proxy) as well as internal connections to the Munich Scientific Network (Münchner Wissenschaftsnetz, MWN). Sending e-mail over POP3~/ IMAP, using instant messaging and playing online games is only possible with a StuStaNet~e.V. membership (see above).
 
 \subsection*{Wifi in StuSta}
 There is no central wifi in StuSta, due to massive concrete walls.
@@ -251,7 +251,7 @@ StuStaNet e. V. sells pre-configured and easy to setup wifi-routers during offic
           \vspace{-15pt}
         \end{minipage}
       \end{figure}
-  \item Now enter the IP address, the subnet mask, the gateway, the DNS and the search domain. The DNS server addresses are \nolinkurl{10.150.127.2} and \nolinkurl{10.150.125.2}, the search domain is \nolinkurl{stusta.mhn.de} and the subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the sticker on the network outlet. Also you should have received a note containing your networksettings with your rental agreement. If the sticker is unreadable or missing and you did not get the note containing the networksettings, please refer to the administration. Confirm the settings with \optemph{OK} and close the window.
+  \item Now enter the IP address, the subnet mask, the gateway, the DNS and the search domain. The DNS server addresses are \nolinkurl{10.148.8.2}, the search domain is \nolinkurl{stusta.mhn.de} and the subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the sticker on the network outlet. Also you should have received a note containing your networksettings with your rental agreement. If the sticker is unreadable or missing and you did not get the note containing the networksettings, please refer to the administration. Confirm the settings with \optemph{OK} and close the window.
 \end{enumerate}
 \vspace{-15pt}
 \paragraph*{Global proxy settings}
@@ -316,7 +316,7 @@ $\rightarrow$ Continue at point 5.
 \begin{enumerate}
     \setcounter{enumi}{4}
 	\item Select \optemph{Internet Protocol Verson 4 (TCP/IPv4)} (Windows Vista)/ \optemph{Internet Protocol  (TCP/IP)} (Windows XP) and click on \optemph{Properties}.
-    \item Now type in the IP address, the subnet mask, the Default gateway and the DNS Server. The DNS Server addresses are \nolinkurl{10.150.127.2} and \nolinkurl{10.150.125.2}, the Subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the sticker on the network outlet. Also you should have received a note containing your networksettings with your rental agreement. If the sticker is unreadable or missing and you did not get the note containing the networksettings, please refer to the administration.
+    \item Now type in the IP address, the subnet mask, the Default gateway and the DNS Server. The DNS Server addresses are \nolinkurl{10.148.8.2}, the Subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the sticker on the network outlet. Also you should have received a note containing your networksettings with your rental agreement. If the sticker is unreadable or missing and you did not get the note containing the networksettings, please refer to the administration.
     \item Click on Advanced and click on the DNS tab. Type \nolinkurl{stusta.mhn.de} in the DNS suffix for this connection field.
 	\item Confirm the settings with \optemph{OK} and close the window.
 \end{enumerate}
@@ -339,7 +339,7 @@ $\rightarrow$ Continue with the browser settings.
 	\item Click on the \optemph{Apple logo} (top left) and select \optemph{System Preferences} $\rightarrow$ \optemph{Network}.
 	\item Select the \optemph{Ethernet} connection.
 	\item Set the \optemph{Configure IPv4} drop-down box to \optemph{Manually}.
-	\item Now type in the IP address, the subnet mask, the gateway, the DNS and the search domain. The DNS server addresses are \nolinkurl{10.150.127.2} and \nolinkurl{10.150.125.2}, the search domain is \nolinkurl{stusta.mhn.de} and the subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the sticker on the network outlet. Also you should have received a note containing your networksettings with your rental agreement. If the sticker is unreadable or missing and you did not get the note containing the networksettings, please refer to the administration. Confirm the settings with \optemph{Apply}.
+	\item Now type in the IP address, the subnet mask, the gateway, the DNS and the search domain. The DNS server addresses are \nolinkurl{10.148.8.2}, the search domain is \nolinkurl{stusta.mhn.de} and the subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the sticker on the network outlet. Also you should have received a note containing your networksettings with your rental agreement. If the sticker is unreadable or missing and you did not get the note containing the networksettings, please refer to the administration. Confirm the settings with \optemph{Apply}.
       \begin{figure}[h!]
       \centering
 %      \vspace{-5pt}
@@ -369,7 +369,7 @@ You can define a global proxy server in Mac OS X so that you don't have to confi
 %\end{wrapfigure}
 \begin{enumerate}
 	\item Click on \optemph{Advanced} and select the \optemph{Proxies} tab
-	\item Mark the checkbox next to \optemph{Automatic Proxy Configuration} and type in the URL \url{http://wpad.stusta.mhn.de/proxy.pac}\ . Click on \optemph{OK} and select \optemph{Apply} one more time. You can now close System Preferences.
+	\item Mark the checkbox next to \optemph{Automatic Proxy Configuration} and type in the URL \url{http://wpad.mb67.stusta.mhn.de/proxy.pac}\ . Click on \optemph{OK} and select \optemph{Apply} one more time. You can now close System Preferences.
 \end{enumerate}
 $\rightarrow$ Your Internet access is now configured.
 
@@ -393,7 +393,7 @@ $\rightarrow$ Your Internet access is now configured.
 	\item Click on \optemph{Edit} $\rightarrow$ \optemph{Preferences}.
 	\item Click on \optemph{Advanced} and select the \optemph{Network} tab.
 	\item Click on \optemph{Settings}.
-    \item Select the bottommost option and use \\ \url{http://wpad.stusta.mhn.de/proxy.pac} as the Automatic proxy configuration URL.
+    \item Select the bottommost option and use \\ \url{http://wpad.mb67.stusta.mhn.de/proxy.pac} as the Automatic proxy configuration URL.
 	\item Confirm with \optemph{OK} and close the remaining windows.
 \end{enumerate}
 $\rightarrow$ Your Internet access is now configured.
