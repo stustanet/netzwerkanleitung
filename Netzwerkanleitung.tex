@@ -174,13 +174,13 @@ Das Einrichten der Internetanbindung besteht aus folgenden Teilen:
     \hline
     Einstellung & Wert & Beispiel \\
     \hline \hline
-    IP-Adresse & \nolinkurl{10.148.xxx.yyy} - \nolinkurl{10.148.xxx.zzz}, \newline 8 Adressen stehen zur Auswahl\footnote{Man findet sie auf der Netzwerkdose im Zimmer oder auf dem IP-Zettel, erhältlich bei der Hausverwaltung.} & \nolinkurl{10.148.243.16} – \nolinkurl{10.148.243.23} \\
+    IP-Adresse & \nolinkurl{10.149.xxx.yyy} - \nolinkurl{10.149.xxx.zzz}, \newline 8 Adressen stehen zur Auswahl\footnote{Man findet sie auf der Netzwerkdose im Zimmer oder auf dem IP-Zettel, erhältlich bei der Hausverwaltung.} & \nolinkurl{10.149.243.16} – \nolinkurl{10.149.243.23} \\
     \hline
     Subnetzmaske & \nolinkurl{255.255.255.0} & \\
     \hline
-    Standardgateway & \nolinkurl{10.148.xxx.254} \newline (Die ersten drei Blöcke wie IP-Adresse, der vierte Block \nolinkurl{254}) & \nolinkurl{10.148.243.254} \\
+    Standardgateway & \nolinkurl{10.149.xxx.254} \newline (Die ersten drei Blöcke wie IP-Adresse, der vierte Block \nolinkurl{254}) & \nolinkurl{10.149.243.254} \\
     \hline
-	DNS-Server (Nameserver) & \nolinkurl{10.148.8.2} & \\
+	DNS-Server (Nameserver) & \nolinkurl{10.149.8.2} & \\
     \hline
     DNS-Suffix (Domainname) & \nolinkurl{stusta.de} & \\
     \hline
@@ -250,7 +250,7 @@ Der StuStaNet e. V. verkauft für die StuSta und das Max-Bill-Wohnheim passend v
           \vspace{-15pt}
         \end{minipage}
       \end{figure}
-    \item Jetzt geben Sie IP-Adresse, Subnetzmaske, Gateway, DNS und Suchdomäne ein. Die Adresse des DNS Servers lautet \textbf{10.148.8.2}, die Suchdomäne \textbf{stusta.de} und die Netzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie einen neuen Zettel benötigen, wenden Sie sich bitte an die Hausverwaltung. Bestätigen Sie mit \emph{OK} und schließen Sie das Fenster für die Netzwerkeinstellungen.
+    \item Jetzt geben Sie IP-Adresse, Subnetzmaske, Gateway, DNS und Suchdomäne ein. Die Adresse des DNS Servers lautet \textbf{10.149.8.2}, die Suchdomäne \textbf{stusta.de} und die Netzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie einen neuen Zettel benötigen, wenden Sie sich bitte an die Hausverwaltung. Bestätigen Sie mit \emph{OK} und schließen Sie das Fenster für die Netzwerkeinstellungen.
 \end{enumerate}
 
 \subsubsection*{Proxy global einstellen} Unter Ubuntu haben Sie die Möglichkeit den Proxy global zu definieren, sodass dieser nicht extra für jedes Programm eingetragen werden.
@@ -317,7 +317,7 @@ $\rightarrow$ Weiter bei Punkt 5.
 \begin{enumerate}
     \setcounter{enumi}{4}
     \item Markieren Sie den Eintrag \textit{Internetprotokoll Version 4 (TCP/IPv4)} (Windows Vista/7/8/10) bzw. Internetprotokoll  (TCP/IP) (Windows XP) und klicken Sie danach auf Eigenschaften.
-    \item Jetzt geben Sie IP-Adresse, Subnetzmaske, Standardgateway und DNS Server ein. Die Adresse des DNS-Servers lautet \textbf{10.148.8.2}, die Subnetzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie keinen Zettel mit Netzwerkdaten bekommen haben und der Aufkleber auf der Anschlussbuchse unlesbar sein, wenden Sie sich bitte an die Hausverwaltung.
+    \item Jetzt geben Sie IP-Adresse, Subnetzmaske, Standardgateway und DNS Server ein. Die Adresse des DNS-Servers lautet \textbf{10.149.8.2}, die Subnetzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie keinen Zettel mit Netzwerkdaten bekommen haben, wenden Sie sich bitte an die Hausverwaltung.
     \item Klicken Sie auf Erweitert und wählen im folgenden Dialog den Reiter DNS aus. Tragen Sie im Feld DNS-Suffix für diese Verbindung \textbf{stusta.de} ein.
     \item Bestätigen mit OK.
 \end{enumerate}
@@ -340,7 +340,7 @@ $\rightarrow$ Weiter bei den Browsereinstellungen.
     \item Öffnen Sie die Netzwerkkonfiguration durch Klick auf \emph{Apfel} (oben links) und wählen dann \emph{Systemeinstellungen} $\rightarrow$ \emph{Netzwerk} aus.
     \item Markieren Sie nun das Netzwerkgerät \emph{Ethernet}.
     \item Setzen Sie das Feld \emph{IPv4 Konfigurieren} auf \emph{Manuell}.
-    \item Jetzt geben Sie \textbf{IP-Adresse, Teilnetzmaske, Gateway, DNS-Server} und \textbf{Such-Domains} ein. Die Adresse des DNS-Servers lautet \textbf{10.148.8.2}, die Such-Domains \textbf{stusta.de} und die Teilnetzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Internetkonfigurationsblatt, das Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung \footnote{Christoph-Probst Straße 10, Studentenstadt Freimann}. Bestätigen Sie mit \emph{Anwenden}.
+    \item Jetzt geben Sie \textbf{IP-Adresse, Teilnetzmaske, Gateway, DNS-Server} und \textbf{Such-Domains} ein. Die Adresse des DNS-Servers lautet \textbf{10.149.8.2}, die Such-Domains \textbf{stusta.de} und die Teilnetzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf dem Internetkonfigurationsblatt, das Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung \footnote{Christoph-Probst Straße 10, Studentenstadt Freimann}. Bestätigen Sie mit \emph{Anwenden}.
       \begin{figure}[h!]
       \centering
 %      \vspace{-5pt}
@@ -436,7 +436,7 @@ $\rightarrow$ Der Internetzugang ist nun fertig konfiguriert.
 \end{wrapfigure}
 \subsection*{\includegraphics[height=1.2cm,keepaspectratio]{Bilder/Chrome_2011_logo} Google Chrome}
 \begin{enumerate}
-	\item Christoph starten
+	\item Chrome starten
     \item Klicken Sie auf die 3 übereinanderliegenden Striche in der rechten oberen Ecke, wählen Sie danach \emph{Einstellungen}
     \item Wählen Sie den Punkt \emph{Erweiterte Einstellungen anzeigen}
 	\item Klicken Sie auf \emph{Proxyeinstellungen ändern...}
