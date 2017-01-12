@@ -276,14 +276,15 @@ $\rightarrow$ Your Internet access is now configured.
 
 \section*{Step by step instructions}
 \subsection*{Windows settings}
-\paragraph*{Windows XP}
-\begin{enumerate}
-	\item Open Control Panel by clicking on \optemph{Start} $\rightarrow$ \optemph{Control Panel}.
-    \item Click on \optemph{Network and Internet Connections}.
-	\item Click on \optemph{Network Connections}.
-	\item Right click on the \optemph{Local Area Connection} and select \optemph{Properties}.
-\end{enumerate}
-$\rightarrow$ Continue at point 5.
+\subsubsection*{Windows XP}
+It is not recommended to use XP because Windows has stopped the support. This System is therefore no longer adequately protected.
+%\begin{enumerate}
+%	\item Open Control Panel by clicking on \optemph{Start} $\rightarrow$ \optemph{Control Panel}.
+%    \item Click on \optemph{Network and Internet Connections}.
+%	\item Click on \optemph{Network Connections}.
+%	\item Right click on the \optemph{Local Area Connection} and select \optemph{Properties}.
+%\end{enumerate}
+%$\rightarrow$ Continue at point 5.
 \paragraph*{Windows Vista/7}
 \begin{enumerate}
 	\item Open Control Panel by clicking on \optemph{Start} $\rightarrow$ \optemph{Control Panel}.
@@ -312,10 +313,17 @@ $\rightarrow$ Continue at point 5.
 	\item Click on \optemph{Change adapter settings} and then right click on the \optemph{Local Area Connection} and select \optemph{Properties}.
 \end{enumerate}
 $\rightarrow$ Continue at point 5.
-\paragraph*{Windows XP/Vista/7/8}
+\paragraph*{Windows 10}
+\begin{enumerate}	
+	\item To open Control Panel click on the Windows button and choose \optemph{Settings}.
+    \item Click on \optemph{Network and Internet} then on \optemph{Ethernet}.
+	\item Click on \optemph{Change adapter settings} and then right click on the \optemph{Ethernet} and select \optemph{Properties}.
+\end{enumerate}
+$\rightarrow$ Continue at point 5.
+\paragraph*{Windows XP/Vista/7/8/10}
 \begin{enumerate}
     \setcounter{enumi}{4}
-	\item Select \optemph{Internet Protocol Verson 4 (TCP/IPv4)} (Windows Vista)/ \optemph{Internet Protocol  (TCP/IP)} (Windows XP) and click on \optemph{Properties}.
+	\item Select \optemph{Internet Protocol Verson 4 (TCP/IPv4)} (Windows Vista/7/8/10)/ \optemph{Internet Protocol  (TCP/IP)} (Windows XP) and click on \optemph{Properties}.
 	\item Now type in the IP address, the subnet mask, the Default gateway and the DNS Server. The DNS Server addresses are \nolinkurl{10.149.8.2}  and \nolinkurl{10.156.33.53}, the Subnet mask is \nolinkurl{255.255.255.0}. You can find your IP address on the note containing your networksettings which you received with your rental agreement. If you did not get the note containing the networksettings, please refer to the administration.
     \item Click on Advanced and click on the DNS tab. Type \nolinkurl{mb67.swh.mhn.de} in the DNS suffix for this connection field.
 	\item Confirm the settings with \optemph{OK} and close the window.
@@ -389,9 +397,9 @@ $\rightarrow$ Your Internet access is now configured.
 
 \subsection*{\includegraphics[height=1.2cm,keepaspectratio]{Bilder/Firefox_35_logo} Mozilla Firefox}
 \begin{enumerate}
-    \item Start Firefox.
-	\item Click on \optemph{Edit} $\rightarrow$ \optemph{Preferences}.
-	\item Click on \optemph{Advanced} and select the \optemph{Network} tab.
+	\item Click on the three stripes in the top right corner. Then choose \optemph{Preferences}.
+	\item Click on \optemph{Advanced} in the left menu
+	\item Select the \optemph{Network} tab.
 	\item Click on \optemph{Settings}.
     \item Select the bottommost option and use \\ \url{http://wpad.mb67.stusta.de/proxy.pac} as the Automatic proxy configuration URL.
 	\item Confirm with \optemph{OK} and close the remaining windows.
@@ -430,11 +438,13 @@ $\rightarrow$ Your Internet access is now configured.
 %  \vspace{-10pt}
 \end{wrapfigure}
 
-\subsection*{\includegraphics[height=1.2cm,keepaspectratio]{Bilder/Opera_O} Opera}
+\subsection*{\includegraphics[height=1.2cm,keepaspectratio]{Bilder/Chrome_2011_logo} Google Chrome}
 \begin{enumerate}
-    \item Start Opera.
-	\item Click on \optemph{Tools} and select \optemph{Settings} $\rightarrow$ \optemph{Preferences}.
-	\item Click on the \optemph{Advanced} tab, select the \optemph{Network} category on the left and click on the \optemph{Proxy servers} button.
+    \item Start Chrome.
+	\item Click on the three stripes in the top right corner. Then choose \optemph{Preferences}
+	\item Click on \optemph{Advanced Settings}.
+	\item Click on \optemph{Change Proxy Settings}.
+	\item Choose the \optemph{Connections} tab and click on \optemph{LAN settings}
 	\item Mark the \optemph{Use automatic proxy configuration script} checkbox and type in this URL: \\ \url{http://wpad.mb67.stusta.de/proxy.pac}
     \item Close both windows by clicking on OK.
 \end{enumerate}
