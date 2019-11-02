@@ -44,7 +44,9 @@ Der Stustanet~e.V. betreibt eine Schadsoftwareerkennung, die Anschlüsse bei Auf
 \begin{bfseries}
 	\\Bei wiederholter Virendiagnose wird der entsprechende Anschluss dauerhaft gesperrt.
 \end{bfseries}
-
+\\
+\\
+In der StuSta gibt es kein zentrales WLAN, allerdings kann jeder selbst einen Access Point betreiben. In den Einstellungen des Routers/AP muss eine der Zimmer-IPs, sowie Gateway, Subnetzmakse und DNS eingestellt werden. Der StuStaNet e.V. verkauft für die StuSta passend vorkonfigurierte Geräte in der Sprechstunde (nur an Mitglieder).
 
 
 
@@ -52,38 +54,30 @@ Der Stustanet~e.V. betreibt eine Schadsoftwareerkennung, die Anschlüsse bei Auf
 
 \section*{Mitgliedschaft StuStaNet e.V.}
 Es gibt zwei Möglichkeiten im Internet zu surfen. Die Standard-Variante ist der Zugang über den Proxyserver. Allerdings muss dieser bei jeder Applikation eingestellt werden, falls dies unterstützt wird. Einige Software unterstützt zudem die ohne Mitgliedschaft nötige manuelle Proxyeinrichtung nicht, das heißt, dass zum Beispiel für Programme wie WhatsApp oder League of Legends eine Mitgliedschaft notwendig ist, damit diese funktionieren.\\
-Die andere Möglichkeit ist über unser NAT-Gateway. Dies und einige andere Dienste\footnote{http://wiki.stusta.de/Dienste} stehen für Mitglieder des StuStaNet e.V. zur Verfügung. Die Konfiguration des Proxys kann dann entfallen.
 \\
-\\
-Für die Mitgliedschaft fällt eine \textbf{einmalige} Aufnahmegebühr von \EUR{20} an. Um Mitglied zu werden, registrieren Sie sich bitte vorab unter \mbox{\url{https://reg.stusta.de}} und kommen Sie zu einer unserer Sprechstunden in Haus 10, Zimmer 1002 (Kellergeschoss). Die Adresse des Hauses lautet: Hans-Leipelt-Straße 7, 80805 München. 
+Die andere Möglichkeit ist über unser NAT-Gateway. Dieses und einige andere Dienste\footnote{http://wiki.stusta.de/Dienste} stehen für Mitglieder des StuStaNet e.V. zur Verfügung. Die Konfiguration des Proxys kann dann entfallen.
+Für die Mitgliedschaft fällt eine \textbf{einmalige} Aufnahmegebühr von \EUR{20} an. Um Mitglied zu werden, registrieren Sie sich bitte vorab unter \mbox{\url{https://reg.stustanet.de}} und kommen Sie zu einer unserer Sprechstunden in Haus 10, Zimmer 1002 (Kellergeschoss). Die Adresse des Hauses lautet: Hans-Leipelt-Straße 7, 80805 München. 
 \\
 Die Sprechstunden finden meist Donnerstags 19:00-19:30 Uhr statt. Zu Beginn des Semesters zusätzlich Montags 19:00-19:30 Uhr. An Feiertagen entfallen die Sprechstunden.
 \\
-Die genauen Zeiten sind unter \mbox{\url{http://sprechstunden.stusta.de}} verfügbar.
+Die genauen Zeiten sind unter \mbox{\url{http://stustanet.de}} verfügbar.
 
 \section*{Netzwerkkonfiguration}
-\subsection*{Überblick}
+\subsection*{Verbinden eines Computers oder eines Routers mit der Netzwerkdose}
 
 Das Einrichten der Internetanbindung besteht aus folgenden Teilen:
 \begin{itemize}
 	\item Anschluss an die Netzwerkbuchse
-	\item Konfiguration der Netzwerkeinstellungen im Betriebssystem
+	\item Konfiguration der Netzwerkeinstellungen im Betriebssystem oder des Routers
 	\item Eintragen des Proxyservers bzw. -skripts im Browser
 \end{itemize}
 Verwenden Sie ausschließlich die \emph{linke} Netzwerkbuchse.\\
+Falls der Router mit den Netzwerkeinstellungen konfiguriert wird, so darf das Betriebssystem nicht auch konfiguriert werden!\\
 Sollten Probleme bei der Verbindung zum Netzwerk auftreten, so ist der Besuch der Seite\\
-\mbox{\url{http://selftest.stusta.de}} hilfreich, während man mit dem nicht funktionierenden Netz verbunden ist. Hierbei wird eine Diagnose erstellt.
+\mbox{\url{http://selftest.stustanet.de}} hilfreich, während man mit dem nicht funktionierenden Netz verbunden ist. Hierbei wird eine Diagnose erstellt. Falls die Seite nicht erreichbar ist oder eine Fehlermeldung angezeigt wird, so ist die Netzwerkkonfiguration fehlerhaft.
  
 
-
-\subsubsection*{WLAN}
-In der StuSta gibt es kein zentrales WLAN, allerdings kann jeder selbst einen Access Point betreiben. In den Einstellungen des Routers/AP muss eine der Zimmer-IPs, sowie Gateway, Subnetzmakse und DNS eingestellt werden. Der StuStaNet e.V. verkauft für die StuSta passend vorkonfigurierte Geräte in der Sprechstunde (nur an Mitglieder).
-
-
-
-
-
-\subsection*{Konfiguration der Netzwerkeinstellungen}
+\subsection*{Netzwerkeinstellungen mit den jeweiligen Proxy-Konfigurationen}
 
 Pro Anschluss stehen 8 IP-Adressen zur Verfügung. Der jeweilige Adressbereich ist auf der Netzwerkdose vermerkt oder auf dem Internetkonfigurationsblatt zu finden, das Sie mit Ihrem Mietvertrag von der Hausverwaltung erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. % \footnote{Christoph-Probst-Straße 10, Studentenstadt Freimann}.
 
@@ -111,14 +105,21 @@ Pro Anschluss stehen 8 IP-Adressen zur Verfügung. Der jeweilige Adressbereich i
     \hline
   \end{tabularx}
 \end{center}
+
+\paragraph*{Für Nicht-Mitglieder}~\\
+\\
 Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell der Proxyserver eingestellt werden. Die Verwendung des \emph{Proxyskripts} wird stark empfohlen!
+
+\begin{figure}[h!]
+		\centering
+		\begin{minipage}[c]{0.45\linewidth}
+			\centering
+			\includegraphics[width=\linewidth,keepaspectratio]{Bilder/IP_Gerneric}
+		\end{minipage}
+	\end{figure}
 
 \newpage
 \enlargethispage{20pt}
-
-
-
-
 
 
 \begin{figure}[h]
@@ -128,31 +129,36 @@ Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell de
 	\vspace{-30pt}
 \end{figure}
 
-\section*{Schritt für Schritt Anleitung Windows}
+\subsubsection*{Schritt für Schritt Anleitung Windows}
 
-\subsection*{Windows Vista/7}
-Achtung: Der Support von Windows 7 endet am 20. Januar 2020. Es wird daher empfohlen, ein anderes Betriebssystem zu verwenden.
+\paragraph*{Windows 10}
 \begin{enumerate}
-    \item Öffnen Sie die \emph{Systemsteuerung} durch Klick auf \emph{Start} $\rightarrow$ \emph{Systemsteuerung}.
-    \item Wählen Sie unter \emph{Netzwerk und Internet} den Punkt \emph{Netzwerkstatus und -aufgaben} anzeigen.
-    \item Nach Klick auf \emph{Netzwerkverbindungen} verwalten wählen Sie im darauffolgenden Fenster durch einen Rechtsklick auf LAN-Verbindung deren Eigenschaften aus.
+	\item Klicken Sie auf das Windowssymbol in der unteren linken Ecke und anschließend auf \emph{Einstellungen}
+	\item Klicken Sie auf \textit{Netzwerk und Internet}. Scrollen Sie runter bis \textit{Netzwerk und Freigabecenter} und klicken auf diesen Punkt. Wählen Sie in der linken Spalte den Punkt \textit{Adaptereinstellungen ändern}. Sollten Sie diesen Punkt nicht finden können Sie auch in der Suchzeile rechts oben nach \glqq Adaptereinstellungen ändern\grqq suchen.
+%	\begin{figure}[h!]
+%	\centering
+%		\begin{minipage}[c]{0.3\linewidth}
+%			\centering
+%			\includegraphics[width=0.9\linewidth,keepaspectratio]{Bilder/IP_Windows}
+%			\caption{Beispielhafte Netzwerkeinstellungen unter Ubuntu Linux}
+%			\vspace{-15pt}
+%		\end{minipage}
+%	\end{figure}
+
+    \item Ihnen sollten nun mehrere Netzwerkverbindungen aufgelistet sein. Klicken Sie mit der \textbf{rechten} Maustaste auf \textit{Ethernet} und klicken Sie dann auf \textit{Eigenschaften}.
 \end{enumerate}
 $\rightarrow$ Weiter bei Punkt 5.
-      \begin{figure}[h!]
-	\centering
-        \vspace{-5pt}
-        \begin{minipage}[c]{0.45\linewidth}
-          \centering
-          \includegraphics[width=\linewidth,keepaspectratio]{Bilder/IP_Gerneric}
-        \end{minipage}
-        \begin{minipage}[c]{0.48\linewidth}
-          \centering
-          \includegraphics[width=\linewidth,keepaspectratio]{Bilder/IP_Windows}
-          \caption{Beispielhafte Netzwerkeinstellungen unter Windows Vista}
-        \end{minipage}
-      \vspace{-20pt}
-      \end{figure}
-\subsection*{Windows 8}
+
+
+\begin{wrapfigure}[5]{R}{0.3\textwidth}
+\centering
+  \includegraphics[width=0.3\textwidth]{Bilder/IP_Windows}
+%  \caption{Bildunterschrift}
+\end{wrapfigure}
+
+
+
+\paragraph*{Windows 8}
 \begin{enumerate}
 	\item Öffnen Sie die Systemsteuerung, indem Sie die Windows-Taste drücken, \glqq Systemsteuerung\grqq  \ eingeben und ENTER drücken
 	\item Wählen Sie unter Netzwerk und Internet den Punkt Netzwerkstatus und -aufgaben anzeigen.
@@ -160,15 +166,9 @@ $\rightarrow$ Weiter bei Punkt 5.
 \end{enumerate}
 $\rightarrow$ Weiter bei Punkt 5.
 
-\subsection*{Windows 10}
-\begin{enumerate}
-	\item Klicken Sie auf das Windowssymbol in der unteren linken Ecke und anschließend auf \emph{Einstellungen}
-	\item Klicken Sie auf \textit{Netzwerk und Internet}. Scrollen Sie runter bis \textit{Netzwerk und Freigabecenter} und klicken auf diesen Punkt. Wählen Sie in der linken Spalte den Punkt \textit{Adaptereinstellungen ändern}. Sollten Sie diesen Punkt nicht finden können Sie auch in der Suchzeile rechts oben nach \glqq Adaptereinstellungen ändern\grqq suchen.
-    \item Ihnen sollten nun mehrere Netzwerkverbindungen aufgelistet sein. Klicken Sie mit der \textbf{rechten} Maustaste auf \textit{Ethernet} und klicken Sie dann auf \textit{Eigenschaften}.
-\end{enumerate}
-$\rightarrow$ Weiter bei Punkt 5.
 
-\subsection*{Windows Vista/7/8/10}
+
+\paragraph*{Windows 8/10}
 \begin{enumerate}
     \setcounter{enumi}{4}
     \item Markieren Sie den Eintrag \textit{Internetprotokoll Version 4 (TCP/IPv4)} (Windows Vista/7/8/10) bzw. Internetprotokoll  (TCP/IP) (Windows XP) und klicken Sie danach auf Eigenschaften.
@@ -185,13 +185,13 @@ $\rightarrow$ Weiter bei den Browsereinstellungen.
 \begin{figure}[t!]
 	\raggedleft
 	\vspace{-20pt}
-	\includegraphics[height=1cm,keepaspectratio]{Bilder/Ubuntu_logo}
+	\includegraphics[height=1cm,keepaspectratio]{Bilder/linux_logo_neu}
 	\vspace{-30pt}
 \end{figure}
 
 
 
-\section*{Schritt für Schritt Anleitung Ubuntu}
+\subsubsection*{Schritt für Schritt Anleitung Linux}
 
 \begin{enumerate}
 	\item Öffnen Sie die Netzwerkkonfiguration durch Klick auf \emph{System} $\rightarrow$ \emph{Einstellungen} $\rightarrow$ \emph{Netzwerkkonfiguration}.
@@ -199,22 +199,20 @@ $\rightarrow$ Weiter bei den Browsereinstellungen.
 	\item Gehen Sie zum Reiter \emph{IPv4-Einstellungen} und setzen Sie Methode auf \emph{Manuell}.
 	\item Unter \emph{Adressen} klicken Sie auf den Button \emph{Hinzufügen}.
 	\begin{figure}[h!]
-		\centering
-		\begin{minipage}[c]{0.45\linewidth}
-			\centering
-			\includegraphics[width=\linewidth,keepaspectratio]{Bilder/IP_Gerneric}
-		\end{minipage}
+	\centering
 		\begin{minipage}[c]{0.5\linewidth}
 			\centering
-			\includegraphics[width=0.9\linewidth,keepaspectratio]{Bilder/IP_Ubuntu}
-			\caption{Beispielhafte Netzwerkeinstellungen unter Ubuntu Linux}
+			\includegraphics[width=0.9\linewidth,keepaspectratio]{Bilder/IP_Ubuntu_neu}
+%			\caption{Beispielhafte Netzwerkeinstellungen unter Ubuntu Linux}
 			\vspace{-15pt}
 		\end{minipage}
 	\end{figure}
 	\item Jetzt geben Sie IP-Adresse, Subnetzmaske, Gateway, DNS und Suchdomäne ein. Die Adressen der DNS-Server lauten \textbf{10.150.127.2} und \textbf{10.150.125.2}, die Suchdomäne \textbf{stusta.mhn.de} und die Netzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie einen neuen Zettel benötigen, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. Bestätigen Sie mit \emph{OK} und schließen Sie das Fenster für die Netzwerkeinstellungen.
 \end{enumerate}
 
-\subsection*{Proxy global einstellen} Unter Ubuntu haben Sie die Möglichkeit den Proxy global zu definieren, sodass dieser nicht extra für jedes Programm eingetragen werden.
+\paragraph*{Proxy global einstellen} ~\\
+\\
+Unter Linux haben Sie die Möglichkeit den Proxy global zu definieren, sodass dieser nicht extra für jedes Programm eingetragen werden muss.
 \begin{enumerate}
 	\item Öffnen Sie die Netzwerk-Proxy-Einstellungen durch Klick auf \emph{System} $\rightarrow$ \emph{Einstellungen} $\rightarrow$ \emph{Netzwerk-Proxy}.
 	\item Hier markieren Sie ganz unten die Option \emph{Automatische Proxy-Konfiguration} und tragen bei URL für Auto-Konfiguration: \url{http://wpad.stusta.mhn.de/proxy.pac} ein. Schließen Sie das Fenster. 
@@ -230,33 +228,30 @@ $\rightarrow$ Weiter bei den Browsereinstellungen.
 \begin{figure}[t!]
 	\raggedleft
 	\vspace{-20pt}
-	\includegraphics[height=1cm,keepaspectratio]{Bilder/OSXLeopard}
+	\includegraphics[height=1cm,keepaspectratio]{Bilder/apple_logo_neu}
 	\vspace{-30pt}
 \end{figure}
-\section*{Schritt für Schritt Anleitung Mac OS X}
+\subsubsection*{Schritt für Schritt Anleitung MacOS}
 \begin{enumerate}
     \item Öffnen Sie die Netzwerkkonfiguration durch Klick auf \emph{Apfel} (oben links) und wählen dann \emph{Systemeinstellungen} $\rightarrow$ \emph{Netzwerk} aus.
     \item Markieren Sie nun das Netzwerkgerät \emph{Ethernet}.
     \item Setzen Sie das Feld \emph{IPv4 Konfigurieren} auf \emph{Manuell}.
-    \item Jetzt geben Sie \textbf{IP-Adresse, Teilnetzmaske, Gateway, DNS-Server} und \textbf{Such-Domains} ein. Die Adressen der DNS-Server lauten \textbf{10.150.127.2} und \textbf{10.150.125.2}, die Such-Domains \textbf{stusta.mhn.de} und die Teilnetzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Internetkonfigurationsblatt, das Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung \footnote{Christoph-Probst Straße 10, Studentenstadt Freimann}. Bestätigen Sie mit \emph{Anwenden}.
+    \item Jetzt geben Sie \textbf{IP-Adresse, Teilnetzmaske, Gateway, DNS-Server} und \textbf{Such-Domains} ein. Die Adressen der DNS-Server lauten \textbf{10.150.127.2} und \textbf{10.150.125.2}, die Such-Domains \textbf{stusta.mhn.de} und die Teilnetzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Internetkonfigurationsblatt, das Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. Bestätigen Sie mit \emph{Anwenden}.
       \begin{figure}[h!]
       \centering
 %      \vspace{-5pt}
-        \begin{minipage}[c]{0.38\linewidth}
-          \centering
-          \includegraphics[width=\linewidth,keepaspectratio]{Bilder/IP_Gerneric}
-        \end{minipage}
         \begin{minipage}[c]{0.60\linewidth}
           \centering
           \includegraphics[width=0.9\linewidth,keepaspectratio]{Bilder/IP_MAC}
-          \caption{Beispielhafte Netzwerkeinstellungen unter Mac OS~X}
+%          \caption{Beispielhafte Netzwerkeinstellungen unter Mac OS~X}
         \end{minipage}
       \vspace{-20pt}
       \end{figure}
 \end{enumerate}
-\vspace{-15pt}
-\subsection*{Proxy global einstellen}
-Unter Mac OS X haben Sie die Möglichkeit den Proxy global zu definieren, sodass dieser nicht extra für jedes Programm eingetragen werden muss. Firefox benötigt allerdings trotzdem eine gesonderte Einstellungen (siehe Browsereinstellungen). %noch aktuelle info??
+\vspace{-10pt}
+\paragraph*{Proxy global einstellen}~\\
+\\
+Unter MacOS haben Sie die Möglichkeit den Proxy global zu definieren, sodass dieser nicht extra für jedes Programm eingetragen werden muss. Firefox benötigt allerdings trotzdem eine gesonderte Einstellungen (siehe Browsereinstellungen). %noch aktuelle info??
 
 %\begin{wrapfigure}{r}{0.4\textwidth}
 %  \vspace{-20pt}
@@ -284,7 +279,7 @@ $\rightarrow$ Der Internetzugang ist jetzt fertig konfiguriert.
 		\includegraphics[width=0.5\textwidth,keepaspectratio]{Bilder/Firefox_neu_proxy}
 	\end{center}
 	%  \vspace{-20pt}
-	\caption{Eintragen des Proxyskripts in Mozilla Firefox}
+%	\caption{Eintragen des Proxyskripts in Mozilla Firefox}
 	%  \vspace{-10pt}
 \end{wrapfigure}
 
@@ -299,28 +294,10 @@ $\rightarrow$ Der Internetzugang ist jetzt fertig konfiguriert.
 \end{enumerate}
 
 
-\begin{wrapfigure}{r}{0.5\textwidth}
-	%  \vspace{-20pt}
-	\begin{center}
-		\includegraphics[width=0.5\textwidth,keepaspectratio]{Bilder/Proxy_IE}
-	\end{center}
-	%  \vspace{-20pt}
-	\caption{Eintragen des Proxyskripts im Internet Explorer}
-	%  \vspace{-10pt}
-\end{wrapfigure}
-
-\subsection*{\includegraphics[height=1.2cm,keepaspectratio]{Bilder/Internet_Explorer_7_Logo} Internet Explorer}
-\begin{enumerate}
-	\item Internet Explorer starten.
-	\item Wählen Sie im Untermenü Extras den Punkt Internetoptionen.
-	\item Im Reiter Verbindungen auf den Button LAN-Ein\-stellungen klicken.
-	\item Setzen Sie bei Automatisches Konfigurationsskript verwenden einen Haken und tragen Sie bei der Adresse \\ \url{http://wpad.stusta.mhn.de/proxy.pac} ein.
-	\item Bestätigen Sie mit OK und schließen Sie die restlichen Fenster.
-\end{enumerate}
-$\rightarrow$ Der Internetzugang ist nun fertig konfiguriert.
 
 
-\newpage
+
+%\newpage
 %\begin{wrapfigure}{r}{0.5\textwidth}
 %	\vspace{-40pt}
 %	\begin{center}
@@ -341,14 +318,14 @@ $\rightarrow$ Der Internetzugang ist nun fertig konfiguriert.
 \end{enumerate}
 $\rightarrow$ Weiter bei Punkt 5 unter Microsoft Edge
 
-
+\newpage
 \begin{wrapfigure}{r}{0.5\textwidth}
 	%  \vspace{-20pt}
 	\begin{center}
 		\includegraphics[width=0.5\textwidth,keepaspectratio]{Bilder/Proxy_Edge}
 	\end{center}
 	%  \vspace{-20pt}
-	\caption{Eintragen des Proxyskripts in Microsoft Edge}
+%	\caption{Eintragen des Proxyskripts in Microsoft Edge}
 	%  \vspace{-10pt}
 \end{wrapfigure}
 
