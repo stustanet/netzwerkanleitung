@@ -1,0 +1,18 @@
+default:
+  image: latex:latest
+
+# Defines stages which are to be executed
+stages:
+  - build
+
+# Stage "build"
+build:
+  stage: build
+  script:
+    - make
+
+  # The files which are to be made available in GitLab
+  artifacts:
+    paths:
+      - build/*.pdf
+
