@@ -10,7 +10,7 @@ mb67_de: Netzwerkanleitung_mb.pdf
 mb67_en: Netzwerkanleitung_EN_mb.pdf
 
 %.pdf: %.tex
-	latexmk -interaction=nonstopmode -outdir=$(OUT) -shell-escape -pdf -halt-on-error $*.pdf
+	latexmk -interaction=nonstopmode -outdir=$(OUT) -shell-escape -pdf -halt-on-error $*.tex
 
 cleanall:
 	latexmk -C
