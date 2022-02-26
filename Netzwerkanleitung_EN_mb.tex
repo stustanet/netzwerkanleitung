@@ -65,13 +65,14 @@ To successfully connect to the Internet you need to follow these steps:
 \begin{itemize}
     \item Connect to the network outlet (Ethernet jack)
     \item Configure the network settings in your operating system or router
-    \item Enter proxy information~/ proxy script into your Web browser
+    \item (Non-members only) Enter proxy information~/ proxy script into your Web browser
 \end{itemize}
 Just use the \emph{left} network outlet.\\
 If you configure the router with the network settings, you mustn't configure your operating system!\\
 If problems during the setup occur, please visit the page \mbox{\url{http://selftest.stustanet.de}}, while you are connected to the nonfunctional network. You receive a report. If the page is unavailable or you receive an error message, then the configuration is wrong.\\
 For further problems \mbox{\url{https://stustanet.de/en/support/}} can be useful.
 
+\newpage
 \subsection*{Network settings with the proxy configurations}
 Each network outlet is assigned eight IP addresses and the IP range is marked on the outlets. Also you should have received a note containing your networksettings with your rental agreement. If the sticker is unreadable or missing and you did not get the note containing the networksettings, please refer to the administration or visit one of our office hours.
 
@@ -83,6 +84,8 @@ Each network outlet is assigned eight IP addresses and the IP range is marked on
     IP address & \nolinkurl{10.149.xxx.yyy} - \nolinkurl{10.149.xxx.zzz}, \newline 8 addresses are available which are marked on the network point & \nolinkurl{10.149.243.16} - \nolinkurl{10.149.243.23} \\
     \hline
     Subnet mask & \nolinkurl{255.255.255.0} & \\
+    \hline
+    Subnet prefix length & \nolinkurl{24} & \\
     \hline
     Standard gateway & \nolinkurl{10.149.xxx.1} \newline first three blocks like the IP address, fourth block \nolinkurl{1} & \nolinkurl{10.149.243.1} \\
     \hline
@@ -97,11 +100,6 @@ Each network outlet is assigned eight IP addresses and the IP range is marked on
   \end{tabularx}
 \end{center}
 
-\newpage
-
-\paragraph*{For non members}~\\
-\\
-You must use either the proxy script (preferred) or the manual proxy configuration. We strongly recommend the usage of the \emph{proxy script}!
 
 \begin{figure}[h!]
         \centering
@@ -110,6 +108,11 @@ You must use either the proxy script (preferred) or the manual proxy configurati
           \includegraphics[width=\linewidth,keepaspectratio]{Bilder/IP_Gerneric_EN_mb}
         \end{minipage}
 \end{figure}
+
+\paragraph*{For non members}~\\
+\\
+You must use either the proxy script (preferred) or the manual proxy configuration. We strongly recommend the usage of the \emph{proxy script}!
+
 
 
 \clearpage
@@ -150,7 +153,7 @@ $\rightarrow$ Continue at point 5.
 \begin{enumerate}
     \setcounter{enumi}{4}
 	\item Select \emph{Internet Protocol Verson 4 (TCP/IPv4)} (Windows 8/10) and click on \emph{Properties}.
-    \item Now type in the IP address, the subnet mask, the Default gateway and the DNS Server. The DNS Server addresses are \textbf{10.149.8.2} and \textbf{10.156.33.53}, the Subnet mask is \textbf{255.255.255.0}. You can find your IP address on the sticker on the network outlet. Also you should have received a note containing your network settings with your rental agreement. If the sticker is unreadable or missing and you did not get the note containing the networksettings, please refer to the administration or visit one of our office hours.
+    \item Now type in the IP address, the subnet mask (subnet prefix length), the Default gateway and the DNS Server. The DNS Server addresses are \textbf{10.149.8.2} and \textbf{10.156.33.53}, the Subnet mask is \textbf{255.255.255.0} (subnet prefix length is \textbf{24}). You can find your IP address on the sticker on the network outlet. Also you should have received a note containing your network settings with your rental agreement. If the sticker is unreadable or missing and you did not get the note containing the networksettings, please refer to the administration or visit one of our office hours.
     \item Click on Advanced and click on the DNS tab. Type \textbf{mb67.swh.mhn.de} in the DNS suffix for this connection field.
 	\item Confirm the settings with \emph{OK} and close the window.
 \end{enumerate}
