@@ -69,7 +69,7 @@ Das Einrichten der Internetanbindung besteht aus folgenden Teilen:
 \begin{itemize}
 	\item Anschluss an die Netzwerkbuchse
 	\item Konfiguration der Netzwerkeinstellungen im Betriebssystem oder des Routers
-	\item Eintragen des Proxyservers bzw. -skripts im Browser
+	\item (Nur für Nicht-Mitglieder) Eintragen des Proxyservers bzw. -skripts im Browser
 \end{itemize}
 Verwenden Sie ausschließlich die \emph{linke} Netzwerkbuchse.\\
 Falls der Router mit den Netzwerkeinstellungen konfiguriert wird, so darf das Betriebssystem nicht auch konfiguriert werden!\\
@@ -95,6 +95,8 @@ Pro Anschluss stehen 8 IP-Adressen zur Verfügung. Der jeweilige Adressbereich i
     \hline
     Subnetzmaske & \nolinkurl{255.255.255.0} & \\
     \hline
+    Subnetzpräfixlänge & \nolinkurl{24} & \\
+    \hline
     Standardgateway & \nolinkurl{10.149.xxx.1} \newline (Die ersten drei Blöcke wie IP-Adresse, der vierte Block \nolinkurl{1}) & \nolinkurl{10.149.243.1} \\
     \hline
     DNS-Server (Nameserver) & \nolinkurl{10.149.8.2} \newline \nolinkurl{10.156.33.53} & \\
@@ -107,11 +109,6 @@ Pro Anschluss stehen 8 IP-Adressen zur Verfügung. Der jeweilige Adressbereich i
     \hline
   \end{tabularx}
 \end{center}
-
-\paragraph*{Für Nicht-Mitglieder}~\\
-\\
-Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell der Proxyserver eingestellt werden. Die Verwendung des \emph{Proxyskripts} wird stark empfohlen!
-
 \begin{figure}[h!]
 		\centering
 		\begin{minipage}[c]{0.45\linewidth}
@@ -119,6 +116,11 @@ Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell de
 			\includegraphics[width=\linewidth,keepaspectratio]{Bilder/IP_Gerneric_mb}
 		\end{minipage}
 	\end{figure}
+
+\paragraph*{Für Nicht-Mitglieder}~\\
+\\
+Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell der Proxyserver eingestellt werden. Die Verwendung des \emph{Proxyskripts} wird stark empfohlen!
+
 
 \newpage
 \enlargethispage{20pt}
@@ -174,7 +176,7 @@ $\rightarrow$ Weiter bei Punkt 5.
 \begin{enumerate}
     \setcounter{enumi}{4}
     \item Markieren Sie den Eintrag \textit{Internetprotokoll Version 4 (TCP/IPv4)} (Windows 8/10) und klicken Sie danach auf Eigenschaften.
-    \item Jetzt geben Sie IP-Adresse, Subnetzmaske, Standardgateway und DNS Server ein. Die Adressen der DNS-Server lauten \textbf{10.149.8.2} und \textbf{10.156.33.53}, die Subnetzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie keinen Zettel mit Netzwerkdaten bekommen haben und der Aufkleber auf der Anschlussbuchse unlesbar sein, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde.
+    \item Jetzt geben Sie IP-Adresse, Subnetzmaske/Subnetzpräfixlänge, Standardgateway und DNS Server ein. Die Adressen der DNS-Server lauten \textbf{10.149.8.2} und \textbf{10.156.33.53}, die Subnetzmaske \textbf{255.255.255.0} bzw. Subnetzpräfixlänge \textbf{24}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie keinen Zettel mit Netzwerkdaten bekommen haben und der Aufkleber auf der Anschlussbuchse unlesbar sein, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde.
     \item Klicken Sie auf Erweitert und wählen im folgenden Dialog den Reiter DNS aus. Tragen Sie im Feld DNS-Suffix für diese Verbindung \textbf{mb67.swh.mhn.de} ein.
     \item Bestätigen mit OK.
 \end{enumerate}
