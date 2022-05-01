@@ -138,6 +138,12 @@ Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell de
 \subsubsection*{Schritt für Schritt Anleitung Windows}
 
 \paragraph*{Windows 10}
+\begin{wrapfigure}[9]{R}{0.3\textwidth}
+	\centering
+	\includegraphics[width=0.3\textwidth]{Bilder/IP_Windows}
+	%  \caption{Bildunterschrift}
+\end{wrapfigure}
+
 \begin{enumerate}
 	\item Klicken Sie auf das Windowssymbol in der unteren linken Ecke und anschließend auf \emph{Einstellungen}
 	\item Klicken Sie auf \textit{Netzwerk und Internet}. Scrollen Sie runter bis \textit{Netzwerk und Freigabecenter} und klicken auf diesen Punkt. Wählen Sie in der linken Spalte den Punkt \textit{Adaptereinstellungen ändern}. Sollten Sie diesen Punkt nicht finden können Sie auch in der Suchzeile rechts oben nach \glqq Adaptereinstellungen ändern\grqq suchen.
@@ -152,37 +158,32 @@ Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell de
 %	\end{figure}
 
     \item Ihnen sollten nun mehrere Netzwerkverbindungen aufgelistet sein. Klicken Sie mit der \textbf{rechten} Maustaste auf \textit{Ethernet} und klicken Sie dann auf \textit{Eigenschaften}.
-\end{enumerate}
-$\rightarrow$ Weiter bei Punkt 5.
-
-
-\begin{wrapfigure}[5]{R}{0.3\textwidth}
-\centering
-  \includegraphics[width=0.3\textwidth]{Bilder/IP_Windows}
-%  \caption{Bildunterschrift}
-\end{wrapfigure}
-
-
-
-\paragraph*{Windows 8}
-\begin{enumerate}
-	\item Öffnen Sie die Systemsteuerung, indem Sie die Windows-Taste drücken, \glqq Systemsteuerung\grqq  \ eingeben und ENTER drücken
-	\item Wählen Sie unter Netzwerk und Internet den Punkt Netzwerkstatus und -aufgaben anzeigen.
-    \item Nach Klick auf Netzwerkverbindungen verwalten wählen Sie im darauffolgenden Fenster durch einen Rechtsklick auf LAN-Verbindung deren Eigenschaften aus.
-\end{enumerate}
-$\rightarrow$ Weiter bei Punkt 5.
-
-
-
-\paragraph*{Windows 8/10}
-\begin{enumerate}
-    \setcounter{enumi}{4}
     \item Markieren Sie den Eintrag \textit{Internetprotokoll Version 4 (TCP/IPv4)} (Windows 8/10) und klicken Sie danach auf Eigenschaften.
     \item Jetzt geben Sie IP-Adresse, Subnetzmaske/Subnetzpräfixlänge, Standardgateway und DNS Server ein. Die Adressen der DNS-Server lauten \textbf{10.150.127.2} und \textbf{10.150.125.2}, die Subnetzmaske \textbf{255.255.255.0} bzw. Subnetzpräfixlänge \textbf{24}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie keinen Zettel mit Netzwerkdaten bekommen haben und der Aufkleber auf der Anschlussbuchse unlesbar sein, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde.
     \item Klicken Sie auf Erweitert und wählen im folgenden Dialog den Reiter DNS aus. Tragen Sie im Feld DNS-Suffix für diese Verbindung \textbf{stusta.mhn.de} ein.
     \item Bestätigen mit OK.
 \end{enumerate}
-$\rightarrow$ Weiter bei den Browsereinstellungen.
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+	%  \vspace{-20pt}
+	\begin{center}
+		\includegraphics[width=0.4\textwidth,keepaspectratio]{Bilder/Proxy_Edge}
+	\end{center}
+	%  \vspace{-20pt}
+	%	\caption{Eintragen des Proxyskripts in Microsoft Edge}
+	%  \vspace{-10pt}
+\end{wrapfigure}
+
+\paragraph*{Proxy global einstellen} ~\\
+
+Unter Windows haben Sie die Möglichkeit den Proxy global zu definieren.
+
+\begin{enumerate}
+	\item Suche \textit{Proxyeinstellungen ändern} in der Windows Suche eingeben und starten.
+	\item Deaktivieren Sie die Option \emph{Einstellungen automatisch erkennen}.
+	\item Wählen Sie \emph{Setupskript verwenden} und tragen Sie bei der Adresse \\ \url{http://wpad.stusta.mhn.de/proxy.pac} ein.
+	\item Klicken Sie auf speichern und schließen Sie die geöffneten Fenster.
+\end{enumerate}
 
 
 
@@ -309,29 +310,6 @@ Unter MacOS haben Sie die Möglichkeit den Proxy global zu definieren, sodass di
 	\item Klicken Sie auf \emph{Proxy-Einstellungen des Computers öffnen}.
 	\\
 	\\
-\end{enumerate}
-$\rightarrow$ Weiter bei Punkt 5 unter Microsoft Edge.
-
-\newpage
-\begin{wrapfigure}{r}{0.5\textwidth}
-	%  \vspace{-20pt}
-	\begin{center}
-		\includegraphics[width=0.5\textwidth,keepaspectratio]{Bilder/Proxy_Edge}
-	\end{center}
-	%  \vspace{-20pt}
-%	\caption{Eintragen des Proxyskripts in Microsoft Edge}
-	%  \vspace{-10pt}
-\end{wrapfigure}
-
-\subsection*{\includegraphics[height=1.2cm,keepaspectratio]{Bilder/Mcrosoft_Edge_logo} Microsoft Edge}
-\begin{enumerate}
-	\item Microsoft Edge starten.
-	\item Klicken Sie auf die 3 übereinanderliegenden Striche in der rechten oberen Ecke, wählen Sie danach \emph{Einstellungen}.
-	\item Wählen Sie den Punkt \emph{Erweiterte Einstellungen anzeigen}.
-	\item Klicken Sie auf \emph{Proxyeinstellungen öffnen}.
-	\item Deaktivieren Sie die Option \emph{Einstellungen automatisch erkennen}.
-	\item Wählen Sie \emph{Setupskript verwenden} und tragen Sie bei der Adresse \\ \url{http://wpad.stusta.mhn.de/proxy.pac} ein.
-	\item Klicken Sie auf speichern und schließen Sie die geöffneten Fenster.
 \end{enumerate}
 
 %\newpage
