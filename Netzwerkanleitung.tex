@@ -64,6 +64,7 @@ Diese findet regelmäßig in Haus 10, Zimmer 002 (Kellergeschoss) donnerstags 19
 Der aktuelle Terminplan ist unter \mbox{\url{https://stustanet.de}} einsehbar.
 
 \section{Allgemeine Informationen zur Einrichtung}
+\label{sec:general}
 
 \subsection{Zettel mit IP-Adressen des Zimmers}
 \label{ip_sheet}
@@ -91,8 +92,8 @@ LAN-Kabel und Router können im Handel oder als Mitglied auch beim \StuStaNet{} 
 Das Einrichten der Internetanbindung besteht somit aus folgenden Teilen:
 \begin{itemize}
 	\item Anschluss des Routers oder Computers an die Netzwerkbuchse (im Regelfall der linke entsprechend auch markierte Stecker)
-	\item Konfiguration der Netzwerkeinstellungen bzw.\@ IP-Adressen des Routers oder Computers, wenn direkt per LAN-Kabel angeschlossen
-	\item (Nur für Nicht-Mitglieder,) Eintragen des Proxyservers bzw. -skripts im Browser auf allen Geräten bzw. Programmen
+	\item Konfiguration der Netzwerkeinstellungen bzw.\@ IP-Adressen des Routers oder Computers, wenn direkt per LAN-Kabel angeschlossen in Kapitel~\ref{section_netzweradresse}
+	\item (Nur für Nicht-Mitglieder,) Eintragen des Proxyservers bzw. -skripts im Browser auf allen Geräten bzw. Programmen in Kapitel~\ref{proxy}
 \end{itemize}
 Falls der Router mit den Netzwerkeinstellungen konfiguriert wurde, dürfen die IP-Adressen nicht auch auf dem Computer oder Smartphone eingestellt werden!
 Zur Kontrolle, ob die Einrichtung erfolgreich war, kann man die folgenden Seiten aufrufen \mbox{\url{http://selftest.stustanet.de}}, \mbox{\url{https://wiki.stusta.de}} und \mbox{\url{http://neverssl.com}} aus dem Zimmernetzwerk (nicht dem Handynetz!) ausprobieren.
@@ -138,7 +139,7 @@ Pro Anschluss stehen 8 IP-Adressen zur Verfügung. Der jeweilige Adressbereich i
 
 \section{Konfiguration IP-Einstellungen}
 \label{section_netzweradresse}
-Die IP-Daten für dieses Kapitel solltet ihr aus dem vorherigen Kapitel haben.
+Hier sind die IP-Daten aus dem vorherigen Kapitel~\ref{sec:general} notwendig.
 \subsection{Router}
 Die Konfiguration der IP-Adressen auf dem Router ist modellabhängig.
 Auf der folgenden Seite haben wir Schlagworte gesammelt, um in der Routeranleitung die richtigen Abschnitte zu finden.
@@ -150,7 +151,8 @@ Eine Anleitung zur Verbindung des Computers mit dem Router ist in der Anleitung 
 Bei Benutzung eines Routers ist es nicht notwendig, die IP-Adressen auch auf den Endgeräten einzurichten wie es im Rest von Kapitel~\ref{section_netzweradresse} beschrieben ist, sondern nur auf dem Router.
 Bei Nicht-Mitglieder ist die Proxykonfiguration auf den Endgeräten trotzdem noch notwendig, aber nicht auf dem Router.
 
-\subsection{IP-Einstellungen LAN für Windows 10}
+\subsection{Konfiguration mit LAN-Kabel Computer (nur ohne Router notwendig)}
+\subsubsection*{IP-Einstellungen LAN für Windows 10}
 \begin{minipage}{0.57\textwidth}
 \begin{enumerate}
 	\item Klicken Sie auf das Windowssymbol in der unteren linken Ecke und anschließend auf \emph{Einstellungen}
@@ -178,7 +180,7 @@ Bei Nicht-Mitglieder ist die Proxykonfiguration auf den Endgeräten trotzdem noc
 	%  \caption{Bildunterschrift}
 \end{minipage}%
 
-\subsection{IP-Einstellungen LAN für Windows 11}
+\subsubsection*{IP-Einstellungen LAN für Windows 11}
 \begin{minipage}{0.57\textwidth}
 \begin{enumerate}
 	\item Gehen Sie in den rechts gelb markierten Feldern zu \textit{Einstellungen} $\rightarrow$ \textit{Netzwerk und Internet} $\rightarrow$ \textit{Ethernet} $\rightarrow$ Bei \textit{IP-Zuweisung} klicke \textit{Bearbeiten}.
@@ -201,7 +203,7 @@ Bei Nicht-Mitglieder ist die Proxykonfiguration auf den Endgeräten trotzdem noc
 \includegraphics[width=\linewidth]{Bilder/Win11/ip_win11_de}
 \end{minipage}
 
-\subsection{IP-Einstellungen LAN für Linux}
+\subsubsection*{IP-Einstellungen LAN für Linux}
 
 Beispiel für \textit{Networkmanager}.
 Kann abweichen je nach Distribution, sollte aber im Kern ähnlich sein.
@@ -229,7 +231,7 @@ Kann abweichen je nach Distribution, sollte aber im Kern ähnlich sein.
 \includegraphics[width=\linewidth]{Bilder/IP_Ubuntu_neu}
 \end{minipage}
 
-\subsection{IP-Einstellungen LAN für MacOS}
+\subsubsection*{IP-Einstellungen LAN für MacOS}
 
 \begin{minipage}{0.57\textwidth}
 \begin{enumerate}
@@ -254,7 +256,7 @@ Kann abweichen je nach Distribution, sollte aber im Kern ähnlich sein.
 	\includegraphics[width=\linewidth,keepaspectratio]{Bilder/IP_MAC}
 \end{minipage}
 
-\subsection{IP-Einstellungen LAN für MacOS (ab Ventura)}
+\subsubsection*{IP-Einstellungen LAN für MacOS (ab Ventura)}
 
 \begin{minipage}{0.57\textwidth}
 	\begin{enumerate}
@@ -285,7 +287,7 @@ Kann abweichen je nach Distribution, sollte aber im Kern ähnlich sein.
 \section{Proxyeinstellungen (nur für Nicht-Mitglieder notwendig)}
 \label{proxy}
 
-\subsection{Globaler Proxy für Windows 10/11}
+\subsection*{Globaler Proxy für Windows 10/11}
 \begin{enumerate}
 	\item Wähle \textit{Einstellungen} $\rightarrow$ \textit{Netzwerk und Internet} $\rightarrow$ \textit{Proxy}.
 	%	\item Deaktivieren Sie die Option \emph{Einstellungen automatisch erkennen}.
@@ -309,20 +311,20 @@ Kann abweichen je nach Distribution, sollte aber im Kern ähnlich sein.
 	\end{minipage}
 \end{figure}
 
-\subsection{Globaler Proxy für Linux}
+\subsection*{Globaler Proxy für Linux}
 Kann abweichen je nach Distribution, sollte aber im Kern ähnlich sein.
 \begin{enumerate}
 	\item Öffnen Sie die Netzwerk-Proxy-Einstellungen durch Klick auf \emph{System} $\rightarrow$ \emph{Einstellungen} $\rightarrow$ \emph{Netzwerk-Proxy}.
 	\item Hier markieren Sie ganz unten die Option \emph{Automatische Proxy-Konfiguration} und tragen bei URL für Auto-Konfiguration: die \textit{.pac Proxyskript-Adresse} ihres Zimmers ein. Schließen Sie das Fenster. 
 \end{enumerate}
 
-\subsection{Globaler Proxy für MacOS}
+\subsection*{Globaler Proxy für MacOS}
 \begin{enumerate}
 	\item Öffnen Sie mit dem Button \emph{Weitere Optionen...} im voherigen Dialog die Detaileinstellungen und wechseln sie auf die Registerkarte \emph{Proxies}.
 	\item Setzen sie bei Zu konfigurierendes Protokoll vor Autom. Proxy-Konfiguration einen Hacken und tragen rechts bei URL die \textit{.pac Proxyskript-Adresse} ihres Zimmers ein. Schließen Sie die Detaileinstellungen mit OK und bestätigen Sie erneut mit Anwenden. Sie können die Netzwerkeinstellungen jetzt schließen.
 \end{enumerate}
 
-\subsection{Globaler Proxy Android}
+\subsection*{Globaler Proxy Android}
 Bei den verschiedenen Herstellern kann das Interface leider abweichen.
 Wenn du Probleme hast, kann du versuchen im Internet nach Anleitungen für dein Handymodell in Verbindung mit den Schlagworten \textit{Proxy Einrichtung} suchen.
 
@@ -353,13 +355,13 @@ Wenn du Probleme hast, kann du versuchen im Internet nach Anleitungen für dein 
 	\end{minipage}
 \end{figure}
 
-\subsection{Globaler Proxy andere Geräte}
+\subsection*{Globaler Proxy andere Geräte}
 Wenn du Probleme hast, kann du versuchen im Internet nach Anleitungen für dein Gerät in Verbindung mit den Schlagworten \textit{Proxy Einrichtung} suchen.
 
-\subsection{Proxy-Konfiguration im Browser}
+\subsection*{Proxy-Konfiguration im Browser}
 \label{Proxy}
 
-\subsubsection{Mozilla Firefox}
+\subsubsection*{Mozilla Firefox}
 
 \begin{minipage}{0.57\textwidth}
 \begin{enumerate}
@@ -378,5 +380,20 @@ Wenn du Probleme hast, kann du versuchen im Internet nach Anleitungen für dein 
 \subsubsection*{Google Chrome \& Microsoft Edge}
 Diese Browser verwenden die Proxyeinstellungen des Betriebssystems.
 Sieh dir dafür den passenden Abschnitt weiter oben an.
+
+\section{Kontrolle \& Debugging}
+Zur Kontrolle könnt ihr versuchen aus eurem Zimmeranschluss die folgenden Seiten aufzurufen.
+\begin{itemize}
+	\item \url{http://selftest.stustanet.de}
+	\begin{itemize}
+		\item Rudimentärer Selftest
+	\end{itemize}
+	\item \url{https://wiki.stusta.de}
+	\begin{itemize}
+		\item StuSta-Internes Wiki
+		\item Bei Fehler Hinweis auf Problem bei IP-Konfiguration aus Kapitel~\ref{section_netzweradresse} oder dem Anschluss des Router/Computers aus Kapitel~\ref{sec:general}.
+		\item Falls aufrufbar, aber andere Seiten nicht, Hinweis auf Probleme mit Proxykonfiguration aus Kapitel~\ref{proxy}.
+	\end{itemize}
+\end{itemize}
 
 \end{document}
