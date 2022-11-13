@@ -8,12 +8,15 @@
 \usepackage{ngerman}
 \usepackage{eurosym}
 \usepackage{tabularx}
+%\usepackage[T1]{fontspec}
+%\usepackage{newcomputermodern}
+\renewcommand*{\familydefault}{\sfdefault}
 \usepackage[pdftex,final]{graphicx}
-\usepackage{wrapfig}
 \usepackage[top=1.5cm,bottom=2.5cm,left=1.5cm,right=1.5cm]{geometry}
 %\usepackage[margin=2cm]{geometry}
-\usepackage{hyperref}
-
+%\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
 
 \title{Wohnanlage Studentenstadt Freimann:\\
        Anleitung zum Einrichten des Internetzugangs}
@@ -30,71 +33,93 @@
    \vspace{-40pt}
 \end{figure}
 
-\section*{Allgemeine Informationen zum Netzwerkanschluss}
+\tableofcontents
+\newpage
 
-Dies ist eine Beschreibung, wie Sie ihren Computer an das Netzwerk der Studentenstadt anschließen. Lesen Sie vorher die Benutzerordnung gründlich durch, die Sie mit ihrem Mietvertrag erhalten haben.
-\\
-\\
-Sie benötigen einen Computer mit LAN-Kabelanschluss, und ein LAN-Kabel zum Anschluss des Computers an der im Zimmer angebrachten Netzwerkdose. Diese Kabel können im Fachhandel oder auch beim StuStaNet~e.V. während der Sprechstunde (siehe weiter unten) erworben werden.
-\\
-\\
-Jeder, der seinen Computer an das Netzwerk der Studentenstadt anschließt, ist dafür verantwortlich, dass dadurch keine anderen Rechner im Netzwerk gefährdet werden. Dazu gehört seinen Rechner vor Viren oder anderer Schadsoftware zu schützen.
-Der StuStaNet~e.V. betreibt eine Schadsoftwareerkennung, die Anschlüsse bei Auffälligkeiten aufgrund von Virenbefall vorübergehend sperrt.
-\\
-\begin{bfseries}
-	\\Bei wiederholter Virendiagnose wird der entsprechende Anschluss dauerhaft gesperrt.
-\end{bfseries}
-\\
-\\
-In der StuSta gibt es kein zentrales WLAN, allerdings kann jeder selbst einen Access Point betreiben. In den Einstellungen des Routers/AP muss eine der Zimmer-IPs, sowie Gateway, Subnetzmakse und DNS eingestellt werden. Der StuStaNet~e.V. verkauft für die StuSta passend vorkonfigurierte Geräte in der Sprechstunde (nur an Mitglieder).
+\section{Allgemeine Informationen zum Netzwerkanschluss}
+Es gibt kein von uns gestelltes WLAN-Netz in den Zimmern, deshalb ist es notwendig, den Netzwerkzugang selbst einzurichten.
+Somit kann jeder für WLAN selber einen Access Point z.B. mithilfe eines Routers betreiben.
 
+Es gibt zwei Möglichkeiten das Internet zu benutzen, die in dieser Anleitung erklärt werden.
+Ohne Mitgliedschaft ist der Zugang nur über unseren Proxyserver möglich.
+Dieser muss in jedem Programm eingestellt und auch davon unterstützt werden.
+Bei einiger Software funktioniert die manuelle Proxyeinrichtung nicht, wie beispielsweise bei WhatsApp oder League of Legends.
 
+Das erlaubt die zweite Option, eine Mitgliedschaft beim StuStaNet~e.\,V.\@
 
-%\pagebreak
+\section{Mitgliedschaft StuStaNet~e.\,V.\@}
+Als Mitglied erfolgt der Zugang über unser NAT-Gateway.
+Die Konfiguration des Proxys auf den Geräten kann damit entfallen.
+Außerdem stehen für Mitglieder des StuStaNet weitere nützliche Dienste (\url{https://wiki.stusta.de/Dienste}) wie eine eigene E-Mail-Adresse, Webspace, ein Backupserver oder WLAN in einigen Gemeinschaftseinrichtungen der StuSta (\url{https://stustanet.de/de/wifi/}) zur Verfügung. 
 
-\section*{Mitgliedschaft StuStaNet~e.V.}
-Es gibt zwei Möglichkeiten im Internet zu surfen. Ohne Mitgliedschaft ist der Zugang über den Proxyserver möglich. Dieser muss bei jeder Applikation eingestellt werden, falls dies unterstützt wird. Einige Software unterstützt die manuelle Proxyeinrichtung nicht, zum Beispiel Programme wie WhatsApp oder League of Legends. Damit diese funktionieren ist eine Mitgliedschaft notwendig.
-\pagebreak\linebreak
-Als Mitglied erfolgt der Zugang über unser NAT-Gateway. Die Konfiguration des Proxys kann dann entfallen. Außerdem stehen für Mitglieder des StuStaNet~e.V. weitere Dienste \footnote{\url{https://wiki.stusta.de/Dienste}} wie eine eigene E-Mail-Adresse, Webspace mit PHP und Datenbankunterstützung oder WLAN in Außenbereichen und Gemeinschaftseinrichtungen \footnote{\url{https://stustanet.de/de/wifi/}} zur Verfügung. 
-\\
-Für die Mitgliedschaft fällt eine \textbf{einmalige} Aufnahmegebühr von \EUR{20} an. Um Mitglied zu werden, registrieren Sie sich bitte unter \mbox{\url{https://reg.stustanet.de}} und werfen Sie den unterschriebenen Mitgleidsantrag in unseren Briefkasten (in Haus 10) ein. Die Adresse des Hauses lautet: Hans-Leipelt-Straße 7, 80805 München.
-\\
-Die Sprechstunden finden in Haus 10, Zimmer 002 (Kellergeschoss) statt. Meist Donnerstags 19:00-19:30 Uhr und zu Beginn des Semesters zusätzlich Montags 19:00-19:30 Uhr. An Feiertagen entfallen die Sprechstunden.
-\\
-Die genauen Zeiten sind unter \mbox{\url{https://stustanet.de}} verfügbar.
+Für die Mitgliedschaft fällt eine einmalige Aufnahmegebühr von derzeit \EUR{20} an.
+Zurzeit gibt es zudem keinen regelmäßigen Mitgliedsbeitrag.
+Um Mitglied zu werden, musst man sich auf \mbox{\url{https://reg.stustanet.de}} registrieren und danach den unterschriebenen Mitgliedsantrag in unseren Briefkasten (\textit{StuStaNet~e.\,V.\@} in Haus 10) einwerfen.
+Alternativ kann die Anmeldung auch in der Sprechstunde stattfinden.
+Diese findet regelmäßig in Haus 10, Zimmer 002 (Kellergeschoss) donnerstags 19:00-19:30 Uhr statt.
+Der aktuelle Terminplan ist unter \mbox{\url{https://stustanet.de}} einsehbar.
 
-\section*{Netzwerkkonfiguration}
-\subsection*{Verbinden eines Computers oder eines Routers mit der Netzwerkdose}
+Die Adresse von Haus 10 lautet: Hans-Leipelt-Straße 7, 80805 München.
 
-Das Einrichten der Internetanbindung besteht aus folgenden Teilen:
+\section{Allgemeine Informationen zur Einrichtung}
+\label{sec:general}
+
+\subsection{Zettel mit IP-Adressen des Zimmers}
+\label{ip_sheet}
+\begin{minipage}{0.57\textwidth}
+Für die Einrichtung wird der Zettel mit den IP-Adressen des Zimmers benötigt.
+Dieser wird beim Einzug ausgehändigt oder als Anhang zu der Mail mit den Vertragsunterlagen versendet.
+Die jeweilige IP-Adresse steht auch auf dem Aufkleber auf der Netzwerkdose im Zimmer.
+Sollte beides nicht auffindbar sein, kann der Servicedesk des Studentenwerks weiterhelfen.
+
+Wichtig ist dabei, dass die \textbf{Netzmaske} auf dem Zettel dabei der \textbf{Subnetzmaske} in manchen Betriebssystemen entspricht und die entsprechende \textbf{Subnetzpräfixlänge} 24 beträgt.
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+\includegraphics[width=\linewidth]{Bilder/ip_zettel}
+%  \caption{Bildunterschrift}
+\end{minipage}
+
+\subsection{Verbinden eines Computers oder eines Routers mit der Netzwerkdose}
+Ein Computer kann entweder direkt über ein LAN-Kabel mit der Netzwerkdose verbunden oder es kann ein Router angeschlossen werden.
+Im Regelfall funktioniert dabei nur die \textbf{linke} Dose, die auch oft entsprechend markiert ist. 
+Um auch WLAN verwenden zu können und für die Verwendung von mehreren Geräten ist langfristig die Nutzung eines Routers zu empfehlen.
+
+LAN-Kabel und Router können im Handel oder als Mitglied auch beim StuStaNet während der Sprechstunde (siehe weiter unten) erworben werden.
+
+\subsection{Proxy für Nicht-Mitglieder}
+
+Falls man nicht Mitglied beim StuStaNet ist, muss für jedes Gerät das im Zimmer benutzt werden soll entweder das Proxyskript verwendet (empfohlen) oder manuell den Proxyserver einstellt werden.
+Nicht alle Programme unterstützen dabei die globalen Proxy-Einstellungen des Betriebssystems und unter Umständen müssen diese auch für einzelne Programme separat eingestellt werden.
+
+\subsection{Zusammenfassung
+}
+Das Einrichten der Internetanbindung besteht somit aus folgenden Teilen:
 \begin{itemize}
-	\item Anschluss an die Netzwerkbuchse
-	\item Konfiguration der Netzwerkeinstellungen im Betriebssystem oder des Routers
-	\item (Nur für Nicht-Mitglieder) Eintragen des Proxyservers bzw. -skripts im Browser
+	\item Anschluss des Routers oder Computers an die Netzwerkbuchse (im Regelfall der linke, entsprechend auch markierte, Stecker)
+	\item \textbf{Kapitel~\ref{sec:network_address}}: Konfiguration der Netzwerkeinstellungen bzw.\@ IP-Adressen des Routers oder Computers (wenn ohne Router direkt an Buchse angeschlossen)
+	\item \textbf{Kapitel~\ref{sec:proxy}}: \textit{Nur für Nicht-Mitglieder:} Eintragen des Proxyservers bzw. -skripts auf allen Geräten bzw. Programmen
 \end{itemize}
-Verwenden Sie ausschließlich die \emph{linke} Netzwerkbuchse.\\
-Falls der Router mit den Netzwerkeinstellungen konfiguriert wird, so darf das Betriebssystem nicht auch konfiguriert werden!\\
-Sollten Probleme bei der Verbindung zum Netzwerk auftreten, so ist der Besuch der Seite\\
-\mbox{\url{http://selftest.stustanet.de}} hilfreich, während man mit dem nicht funktionierenden Netz verbunden ist. Hierbei wird eine Diagnose erstellt. Falls die Seite nicht erreichbar ist oder eine Fehlermeldung angezeigt wird, so ist die Netzwerkkonfiguration fehlerhaft.\\
-Bei weiteren Problemen kann \mbox{\url{https://stustanet.de/de/support/}} weiterhelfen.
 
-\pagebreak 
+Falls der Router mit den Netzwerkeinstellungen konfiguriert wurde, dürfen die IP-Adressen nicht auch auf dem Computer oder Smartphone eingestellt werden!
 
-\subsection*{Netzwerkeinstellungen mit den jeweiligen Proxy-Konfigurationen}
+Bei Problemen gibt es eine kurze Hilfe in Kapitel~\ref{sec:debugging}.
+\\
+\\
+\noindent\begin{minipage}{\textwidth}
 
-Pro Anschluss stehen 8 IP-Adressen zur Verfügung. Der jeweilige Adressbereich ist auf der Netzwerkdose vermerkt oder auf dem Internetkonfigurationsblatt zu finden, das Sie mit Ihrem Mietvertrag von der Hausverwaltung erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. % \footnote{Christoph-Probst-Straße 10, Studentenstadt Freimann}.
-
-
-
+\subsection{Übersicht Netzwerkeinstellungen mit den jeweiligen Proxy-Konfigurationen}
+\label{subsec:settings}
+Pro Anschluss stehen 8 IP-Adressen zur Verfügung, wovon jede benutzt werden kann.
+Der jeweilige Adressbereich ist auf der Netzwerkdose vermerkt oder auf dem Zettel mit den IP-Adressen aus Punkt~\ref{ip_sheet} zu finden.
 
 \begin{center}
-  \begin{tabularx}{\linewidth}{|lXp{.2\linewidth}|}
+  \begin{tabularx}{\linewidth}{lXp{.2\linewidth}}
+    \textbf{Einstellung} & \textbf{Wert} & \textbf{Beispiel} \\
+    \midrule
+    IP-Adresse & \nolinkurl{10.150.xxx.yyy} - \nolinkurl{10.150.xxx.zzz}, \newline 8 Adressen stehen zur Auswahl & \nolinkurl{10.150.243.16} – \nolinkurl{10.150.243.23} \\
     \hline
-    Einstellung & Wert & Beispiel \\
-    \hline \hline
-    IP-Adresse & \nolinkurl{10.150.xxx.yyy} - \nolinkurl{10.150.xxx.zzz}, \newline 8 Adressen stehen zur Auswahl\footnote{Auffindbar auf der Netzwerkdose im Zimmer, auf dem IP-Zettel, bei der Hausverwaltung oder in der Sprechstunde.} & \nolinkurl{10.150.243.16} – \nolinkurl{10.150.243.23} \\
-    \hline
-    Subnetzmaske & \nolinkurl{255.255.255.0} & \\
+    Netzmaske/Subnetzmaske & \nolinkurl{255.255.255.0} & \\
     \hline
     Subnetzpräfixlänge & \nolinkurl{24} & \\
     \hline
@@ -104,234 +129,295 @@ Pro Anschluss stehen 8 IP-Adressen zur Verfügung. Der jeweilige Adressbereich i
     \hline
     DNS-Suffix (Domainname) & \nolinkurl{stusta.mhn.de} & \\
     \hline
-    Proxyskript & \multicolumn{2}{l|}{\nolinkurl{http://wpad.stusta.mhn.de/proxy.pac}} \\
+    Proxyskript &{\nolinkurl{http://wpad.stusta.mhn.de/proxy.pac}} & \\ 
     \hline
-    Proxyserver (manuell) & \multicolumn{2}{l|}{\nolinkurl{http://proxy.stusta.mhn.de:3128}} \\
-    \hline
+    Proxyserver (manuell) & {\nolinkurl{http://proxy.stusta.mhn.de:3128}} & \\ 
+    \bottomrule
   \end{tabularx}
+\linebreak
+Adressauswahl:
+
+\includegraphics[width=0.4\linewidth,keepaspectratio]{Bilder/IP_Gerneric}
 \end{center}
-
-\begin{figure}[h!]
-		\centering
-		\begin{minipage}[c]{0.45\linewidth}
-			\centering
-			\includegraphics[width=\linewidth,keepaspectratio]{Bilder/IP_Gerneric}
-		\end{minipage}
-	\end{figure}
-
-\paragraph*{Für Nicht-Mitglieder}~\\
-\\
-Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell der Proxyserver eingestellt werden. Die Verwendung des \emph{Proxyskripts} wird stark empfohlen!
-
+\end{minipage}
 
 \newpage
-\enlargethispage{20pt}
 
+\section{Konfiguration IP-Einstellungen}
+\label{sec:network_address}
+Hier sind die IP-Daten aus dem vorherigen Kapitel~\ref{sec:general} notwendig.
+\subsection{Router}
+Die Konfiguration der IP-Adressen auf dem Router ist modellabhängig.
+Auf der folgenden Seite haben wir Schlagworte gesammelt, um in der Routeranleitung die richtigen Abschnitte zu finden.
+
+\url{https://stustanet.de/de/support/router_instructions/}
+
+Eine generelle Anleitung zur Verbindung des Computers mit dem Router ist in der Anleitung des Routerherstellers zu finden.
+
+Bei Benutzung eines Routers ist es nicht notwendig, die IP-Adressen auch auf den Endgeräten (Computer, Handy, ....) einzurichten wie es im Rest von Kapitel~\ref{sec:network_address} beschrieben ist, sondern nur auf dem Router.
+Bei Nicht-Mitglieder ist die Proxykonfiguration auf allen Endgeräten (Computer, Handy, ...) außer des Routers trotzdem notwendig.
+
+\subsection{Konfiguration mit LAN-Kabel direkt am Computer (nur ohne Router notwendig)}
+\subsubsection*{IP-Einstellungen LAN für Windows 10}
+\begin{minipage}{0.57\textwidth}
+\begin{enumerate}
+	\item Klicke auf das Windowssymbol in der unteren linken Ecke und anschließend auf \textit{Einstellungen}
+	\item Klicke auf \textit{Netzwerk- und Internet}.
+	Scrolle nach unten bis \textit{Netzwerk- und Freigabecenter} und klicke auf diesen Punkt. Wähle in der linken Spalte den Punkt \textit{Adaptereinstellungen ändern} aus.
+	Man kann auch in der Suchzeile rechts oben nach \glqq Adaptereinstellungen ändern\grqq suchen.
+    \item Es sollten nun mehrere Netzwerkverbindungen aufgelistet sein. Klicke mit der \textbf{rechten} Maustaste auf \textit{Ethernet} und klicke auf \textit{Eigenschaften}.
+    \item Markiere den Eintrag \textit{Internetprotokoll Version 4 (TCP/IPv4)} und klicke danach auf Eigenschaften.
+    \item Jetzt gebe
+    \begin{itemize}
+    	\item IP-Adresse
+    	\item Subnetzmaske
+    	\item (Standart-)Gateway
+    	\item Bevorzugter DNS-Server
+    	\item Alternativer DNS-Server
+    \end{itemize}
+	ein.
+    \item Klicke auf \textit{Erweitert} und wählen im folgenden Dialog den Reiter \textit{DNS} aus. Trage im Feld \textit{DNS-Suffix} für diese Verbindung die Suchdomäne ein.
+    \item Bestätige mit \textit{OK}.
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[width=\textwidth]{Bilder/IP_Windows}
+	%  \caption{Bildunterschrift}
+\end{minipage}%
+
+\subsubsection*{IP-Einstellungen LAN für Windows 11}
+\begin{minipage}{0.57\textwidth}
+\begin{enumerate}
+	\item Gehe in den rechts orange markierten Feldern zu \textit{Einstellungen} $\rightarrow$ \textit{Netzwerk und Internet} $\rightarrow$ \textit{Ethernet} $\rightarrow$ Bei \textit{IP-Zuweisung} klicke \textit{Bearbeiten}.
+	\item Ändere das Dropdown-Menü zu \textit{Manuell}.
+	\item Setze die Checkbox \textit{IPv4} auf \textit{Ein}.
+	\item Jetzt trage in die rechts blau markierten Felder
+		\begin{itemize}
+			\item IP-Adresse
+			\item Subnetzmaske
+			\item Gateway
+			\item Bevorzugter DNS
+			\item Alternativer DNS
+		\end{itemize}
+	deines Zimmers von Punkt~\ref{ip_sheet} ein.
+	\item Bestätige mit \textit{Speichern}.
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+\includegraphics[width=\linewidth]{Bilder/Win11/IP_win11}
+Auswählen: \textit{orange}, Ausfüllen: \textit{blau}
+\end{minipage}
+
+\subsubsection*{IP-Einstellungen LAN für Linux}
+
+Beispiel für \textit{Networkmanager}.
+Kann abweichen je nach Distribution, sollte aber im Kern ähnlich sein.
+
+\begin{minipage}{0.57\textwidth}
+\begin{enumerate}
+	\item Öffne die Netzwerkkonfiguration durch Klick auf \textit{System} $\rightarrow$ \textit{Einstellungen} $\rightarrow$ \textit{Netzwerkkonfiguration}.
+	\item Markiere nun im Reiter Kabelgebunden den entsprechenden Eintrag Ihrer Netzwerkkarte (im Normalfall \textit{eth0}) und klicken Sie auf den Button \textit{Bearbeiten}.
+	\item Gehe zum Reiter \textit{IPv4-Einstellungen} und setze \textit{Methode} auf \textit{Manuell}.
+	\item Unter \textit{Adressen} klicke auf den Button \textit{Hinzufügen}.
+	\item Jetzt gebe
+	\begin{itemize}
+		\item IP-Adresse
+		\item Subnetzmaske
+		\item Gateway
+		\item DNS
+		\item Suchdomäne
+	\end{itemize}
+	ein.
+	\item Bestätige mit \textit{OK} und schließe das Fenster für die Netzwerkeinstellungen.
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+\includegraphics[width=\linewidth]{Bilder/IP_Ubuntu_neu}
+\end{minipage}
+
+\subsubsection*{IP-Einstellungen LAN ab MacOS 13.0 (Ventura)}
+
+\begin{minipage}{0.57\textwidth}
+	\begin{enumerate}
+		\item Öffne die Netzwerkkonfiguration durch Klick auf \textit{Apfel} (oben links) und wählen dann \textit{Systemeinstellungen} $\rightarrow$ \textit{Netzwerk} aus.
+		\item Wähle nun ihren LAN-Adapter bzw. Dock in der Liste aus.
+		\item Klicke auf \textit{Details}.
+		\item Gehe auf den Reiter \textit{TCP/IP}.
+		\item Wähle beim Feld \textit{IPv4 Konfigurieren} die Option \textit{Manuell}.
+		\item Jetzt gebe
+		\begin{itemize}
+			\item IP-Adresse
+			\item Netzmaske/Teilnetzmaske
+			\item Gateway/Router
+		\end{itemize}
+		ein.
+		\item Als Nächstes wähle den Reiter \textit{DNS} aus.
+		\item Füge beim \textit{DNS-Server} jeweils einzeln mittels \textbf{+} die beiden \textit{DNS-Server} hinzu.
+		\item Füge bei \textit{Suchdomäne} mittels \textbf{+} die \textit{Suchdomäne} hinzu.
+		\item Bestätige mit \textit{OK}.
+	\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+	\centering
+	\includegraphics[width=\linewidth,keepaspectratio]{Bilder/macos/ip_macos13}
+	Auswählen: \textit{orange}, Ausfüllen: \textit{blau}
+\end{minipage}
+
+\subsubsection*{IP-Einstellungen LAN für MacOS (alt)}
+
+\begin{minipage}{0.57\textwidth}
+\begin{enumerate}
+    \item Öffne die Netzwerkkonfiguration durch Klick auf \textit{Apfel} (oben links) und wählen dann \textit{Systemeinstellungen} $\rightarrow$ \textit{Netzwerk} aus.
+    \item Markiere nun das Netzwerkgerät \textit{Ethernet}.
+    \item Setze das Feld \textit{IPv4 Konfigurieren} auf \textit{Manuell}.
+    \item Jetzt gebe
+    \begin{itemize}
+    	\item IP-Adresse
+    	\item Netzmaske/Teilnetzmaske
+    	\item Gateway/Router
+    	\item DNS
+    	\item Suchdomäne
+    \end{itemize}
+	in den entsprechenden Feldern ein.
+	\item Bestätige mit \textit{Anwenden}.
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+	\centering
+	\includegraphics[width=\linewidth,keepaspectratio]{Bilder/IP_MAC}
+\end{minipage}
+
+\section{Proxyeinstellungen (nur für Nicht-Mitglieder notwendig)}
+\label{sec:proxy}
+
+\subsection*{Globaler Proxy für Windows 10/11}
+\begin{enumerate}
+	\item Wähle \textit{Einstellungen} $\rightarrow$ \textit{Netzwerk und Internet} $\rightarrow$ \textit{Proxy}.
+	%	\item Deaktivieren Sie die Option \textit{Einstellungen automatisch erkennen}.
+	\subitem \textbf{Nur Windows 11:} Klicke bei \textit{Setupskript verwenden} auf den Button  \textit{Einrichten}.
+	
+	\setcounter{enumi}{1}
+	\item Setze \textit{Setupskript verwenden} auf \textit{Ein}.
+	\item Trage als Skriptadresse die \textit{.pac Proxyskript-Adresse} des Zimmers ein.
+	\item Bestätige mit \textit{Speichern}.
+\end{enumerate}
 
 \begin{figure}[h]
-	\raggedleft
-	\vspace{-20pt}
-	\includegraphics[height=1cm,keepaspectratio]{Bilder/Windows_logo}
-	\vspace{-30pt}
-\end{figure}
-
-\subsubsection*{Schritt für Schritt Anleitung Windows}
-
-\paragraph*{Windows 10}
-\begin{wrapfigure}[9]{R}{0.3\textwidth}
 	\centering
-	\includegraphics[width=0.3\textwidth]{Bilder/IP_Windows}
-	%  \caption{Bildunterschrift}
-\end{wrapfigure}
-
-\begin{enumerate}
-	\item Klicken Sie auf das Windowssymbol in der unteren linken Ecke und anschließend auf \emph{Einstellungen}
-	\item Klicken Sie auf \textit{Netzwerk und Internet}. Scrollen Sie runter bis \textit{Netzwerk und Freigabecenter} und klicken auf diesen Punkt. Wählen Sie in der linken Spalte den Punkt \textit{Adaptereinstellungen ändern}. Sollten Sie diesen Punkt nicht finden können Sie auch in der Suchzeile rechts oben nach \glqq Adaptereinstellungen ändern\grqq suchen.
-%	\begin{figure}[h!]
-%	\centering
-%		\begin{minipage}[c]{0.3\linewidth}
-%			\centering
-%			\includegraphics[width=0.9\linewidth,keepaspectratio]{Bilder/IP_Windows}
-%			\caption{Beispielhafte Netzwerkeinstellungen unter Ubuntu Linux}
-%			\vspace{-15pt}
-%		\end{minipage}
-%	\end{figure}
-
-    \item Ihnen sollten nun mehrere Netzwerkverbindungen aufgelistet sein. Klicken Sie mit der \textbf{rechten} Maustaste auf \textit{Ethernet} und klicken Sie dann auf \textit{Eigenschaften}.
-    \item Markieren Sie den Eintrag \textit{Internetprotokoll Version 4 (TCP/IPv4)} (Windows 8/10) und klicken Sie danach auf Eigenschaften.
-    \item Jetzt geben Sie IP-Adresse, Subnetzmaske/Subnetzpräfixlänge, Standardgateway und DNS Server ein. Die Adressen der DNS-Server lauten \textbf{10.150.127.2} und \textbf{10.150.125.2}, die Subnetzmaske \textbf{255.255.255.0} bzw. Subnetzpräfixlänge \textbf{24}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie keinen Zettel mit Netzwerkdaten bekommen haben und der Aufkleber auf der Anschlussbuchse unlesbar sein, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde.
-    \item Klicken Sie auf Erweitert und wählen im folgenden Dialog den Reiter DNS aus. Tragen Sie im Feld DNS-Suffix für diese Verbindung \textbf{stusta.mhn.de} ein.
-    \item Bestätigen mit OK.
-\end{enumerate}
-
-\begin{wrapfigure}{r}{0.4\textwidth}
-	%  \vspace{-20pt}
-	\begin{center}
-		\includegraphics[width=0.4\textwidth,keepaspectratio]{Bilder/Proxy_Edge}
-	\end{center}
-	%  \vspace{-20pt}
-	%	\caption{Eintragen des Proxyskripts in Microsoft Edge}
-	%  \vspace{-10pt}
-\end{wrapfigure}
-
-\paragraph*{Proxy global einstellen} ~\\
-
-Unter Windows haben Sie die Möglichkeit den Proxy global zu definieren.
-
-\begin{enumerate}
-	\item Suche \textit{Proxyeinstellungen ändern} in der Windows Suche eingeben und starten.
-	\item Deaktivieren Sie die Option \emph{Einstellungen automatisch erkennen}.
-	\item Wählen Sie \emph{Setupskript verwenden} und tragen Sie bei der Adresse \\ \url{http://wpad.stusta.mhn.de/proxy.pac} ein.
-	\item Klicken Sie auf speichern und schließen Sie die geöffneten Fenster.
-\end{enumerate}
-
-
-
-\pagebreak
-
-\begin{figure}[t!]
-	\raggedleft
-	\vspace{-20pt}
-	\includegraphics[height=1cm,keepaspectratio]{Bilder/linux_logo_neu}
-	\vspace{-30pt}
+	\begin{minipage}{.55\textwidth}
+		\centering
+		\includegraphics[height=.20\textheight]{Bilder/Proxy_Edge}
+	\end{minipage}
+	\begin{minipage}{.30\textwidth}
+		\centering
+		\includegraphics[height=.20\textheight]{Bilder/Win11/proxy_win11}
+	\end{minipage}
 \end{figure}
+\begin{center}
+	Links: \textit{Windows 10}, Rechts: \textit{Windows 11}
+	
+	Auswählen: \textit{orange}, Ausfüllen: \textit{blau}
+\end{center}
 
 
+\subsection*{Globaler Proxy für Linux}
 
-\subsubsection*{Schritt für Schritt Anleitung Linux}
-
+Kann abweichen je nach Distribution, sollte aber im Kern ähnlich sein.
 \begin{enumerate}
-	\item Öffnen Sie die Netzwerkkonfiguration durch Klick auf \emph{System} $\rightarrow$ \emph{Einstellungen} $\rightarrow$ \emph{Netzwerkkonfiguration}.
-	\item Markieren Sie nun im Reiter Kabelgebunden den entsprechenden Eintrag Ihrer Netzwerkkarte (im Normalfall \emph{eth0}) und klicken Sie auf den Button \emph{Bearbeiten}.
-	\item Gehen Sie zum Reiter \emph{IPv4-Einstellungen} und setzen Sie Methode auf \emph{Manuell}.
-	\item Unter \emph{Adressen} klicken Sie auf den Button \emph{Hinzufügen}.
-	\begin{figure}[h!]
+	\item Öffne die Netzwerk-Proxy-Einstellungen durch Klick auf \textit{System} $\rightarrow$ \textit{Einstellungen} $\rightarrow$ \textit{Netzwerk-Proxy}.
+	\item Hier markiere ganz unten die Option \textit{Automatische Proxy-Konfiguration} und tragen bei URL für Auto-Konfiguration die \textit{.pac Proxyskript-Adresse} des Zimmers ein. Schließe das Fenster. 
+\end{enumerate}
+
+\subsection*{Globaler Proxy für MacOS 13.0 (Ventura)}
+
+\begin{minipage}{0.57\textwidth}
+	\begin{enumerate}
+		\item Öffne die Netzwerkkonfiguration durch Klick auf \textit{Apfel} (oben links) und wählen dann \textit{Systemeinstellungen} $\rightarrow$ \textit{Netzwerk} aus.
+		\item Wähle nun ihren LAN-Adapter bzw. Dock in der Liste aus.
+		\item Klicke auf \textit{Details}.
+		\item Gehe auf den Reiter \textit{Proxies}.
+		\item Wähle \textit{Automatische Proxy-Konfiguration} aus.
+		\item Gebe in \textit{URL} die \textit{.pac Proxyskript-Adresse} des Zimmers ein.
+		\item Als Nächstes wähle den Reiter \textit{DNS} aus.
+		\item Füge beim \textit{DNS-Server} jeweils einzeln mittels \textbf{+} die beiden \textit{DNS-Server} hinzu.
+		\item Füge bei \textit{Suchdomäne} mittels \textbf{+} die \textit{Suchdomäne} hinzu.
+		\item Bestätige mit \textit{OK}.
+	\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
 	\centering
-		\begin{minipage}[c]{0.5\linewidth}
-			\centering
-			\includegraphics[width=0.9\linewidth,keepaspectratio]{Bilder/IP_Ubuntu_neu}
-%			\caption{Beispielhafte Netzwerkeinstellungen unter Ubuntu Linux}
-			\vspace{-15pt}
-		\end{minipage}
-	\end{figure}
-	\item Jetzt geben Sie IP-Adresse, Subnetzmaske, Gateway, DNS und Suchdomäne ein. Die Adressen der DNS-Server lauten \textbf{10.150.127.2} und \textbf{10.150.125.2}, die Suchdomäne \textbf{stusta.mhn.de} und die Netzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie einen neuen Zettel benötigen, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. Bestätigen Sie mit \emph{OK} und schließen Sie das Fenster für die Netzwerkeinstellungen.
-\end{enumerate}
+	\includegraphics[width=\linewidth,keepaspectratio]{Bilder/macos/proxy_macos13}
+	Auswählen: \textit{orange}, Ausfüllen: \textit{blau}
+\end{minipage}
 
-\paragraph*{Proxy global einstellen} ~\\
-\\
-Unter Linux haben Sie die Möglichkeit den Proxy global zu definieren, sodass dieser nicht extra für jedes Programm eingetragen werden muss.
+\subsection*{Globaler Proxy für MacOS (alt)}
 \begin{enumerate}
-	\item Öffnen Sie die Netzwerk-Proxy-Einstellungen durch Klick auf \emph{System} $\rightarrow$ \emph{Einstellungen} $\rightarrow$ \emph{Netzwerk-Proxy}.
-	\item Hier markieren Sie ganz unten die Option \emph{Automatische Proxy-Konfiguration} und tragen bei URL für Auto-Konfiguration: \url{http://wpad.stusta.mhn.de/proxy.pac} ein. Schließen Sie das Fenster. 
+	 \item Öffne die Netzwerkkonfiguration durch Klick auf \textit{Apfel} (oben links) und wählen dann \textit{Systemeinstellungen} $\rightarrow$ \textit{Netzwerk} aus.
+	\item Markiere nun das Netzwerkgerät \textit{Ethernet}.
+	\item Öffne mit dem Button \textit{Weitere Optionen...} die Detaileinstellungen und wechsle auf die Registerkarte \textit{Proxies}.
+	\item Setze bei \textit{Zu konfigurierendes Protokoll} vor \textit{Autom. Proxy-Konfiguration} einen Haken und tragen rechts bei URL die \textit{.pac Proxyskript-Adresse} ihres Zimmers ein. Schließe die Detaileinstellungen mit \textit{OK} und bestätige erneut mit \textit{Anwenden}. Man kann die Netzwerkeinstellungen dann schließen.
 \end{enumerate}
 
+\subsection*{Globaler Proxy Android}
+Bei den verschiedenen Herstellern kann das Interface leider abweichen.
+Wenn du Probleme hast, kann du versuchen im Internet nach Anleitungen für dein Handymodell in Verbindung mit den Schlagworten \textit{Proxy Einrichtung} suchen.
 
+\subsubsection*{Google Pixel Android 12}
+\begin{enumerate}
+	\item Öffne die WLAN-Einstellungen.
+	\item Klicke auf das Zahnrad neben dem Namen deines WLAN-Netzwerkes.
+	\item Klicke auf das Stiftsymbol am oberen rechten Bildschirmrand.
+	\item Aktiviere das Drop-Down-Menü \textit{Erweiterte Optionen}.
+	\item Wähle unter \textit{Proxy} den Punkt \textit{Automatische Proxykonfiguration}.
+	\item Trage als \textit{PAC-URL} die \textit{.pac Proxyskript-Adresse} des Zimmers ein.
+	\item Bestätige mit \textit{Speichern}.
+\end{enumerate}
 
-\newpage
-\enlargethispage{20pt}
-
-
-
-\begin{figure}[t!]
-	\raggedleft
-	\vspace{-20pt}
-	\includegraphics[height=1cm,keepaspectratio]{Bilder/apple_logo_neu}
-	\vspace{-30pt}
+\begin{figure}[h]
+	\centering
+	\begin{minipage}{0.24\textwidth}
+		\includegraphics[width=0.7\linewidth,keepaspectratio]{Bilder/Android/android12_1}
+	\end{minipage}
+	\begin{minipage}{0.24\textwidth}
+		\includegraphics[width=0.7\linewidth,keepaspectratio]{Bilder/Android/android12_2}
+	\end{minipage}
+	\begin{minipage}{0.24\textwidth}
+		\includegraphics[width=0.7\linewidth,keepaspectratio]{Bilder/Android/android12_3}
+	\end{minipage}
+	\begin{minipage}{0.24\textwidth}
+		\includegraphics[width=0.7\linewidth,keepaspectratio]{Bilder/Android/android12_4}
+	\end{minipage}
+	Rote Markierungen folgen
 \end{figure}
-\subsubsection*{Schritt für Schritt Anleitung MacOS}
-\begin{enumerate}
-    \item Öffnen Sie die Netzwerkkonfiguration durch Klick auf \emph{Apfel} (oben links) und wählen dann \emph{Systemeinstellungen} $\rightarrow$ \emph{Netzwerk} aus.
-    \item Markieren Sie nun das Netzwerkgerät \emph{Ethernet}.
-    \item Setzen Sie das Feld \emph{IPv4 Konfigurieren} auf \emph{Manuell}.
-    \item Jetzt geben Sie IP-Adresse, Teilnetzmaske, Gateway, DNS-Server und Such-Domains ein. Die Adressen der DNS-Server lauten \textbf{10.150.127.2} und \textbf{10.150.125.2}, die Such-Domains \textbf{stusta.mhn.de} und die Teilnetzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Internetkonfigurationsblatt, das Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. Bestätigen Sie mit \emph{Anwenden}.
-      \begin{figure}[h!]
-      \centering
-%      \vspace{-5pt}
-        \begin{minipage}[c]{0.60\linewidth}
-          \centering
-          \includegraphics[width=0.9\linewidth,keepaspectratio]{Bilder/IP_MAC}
-%          \caption{Beispielhafte Netzwerkeinstellungen unter Mac OS~X}
-        \end{minipage}
-      \vspace{-20pt}
-      \end{figure}
-\end{enumerate}
-\vspace{-10pt}
-\paragraph*{Proxy global einstellen}~\\
-\\
-Unter MacOS haben Sie die Möglichkeit den Proxy global zu definieren, sodass dieser nicht extra für jedes Programm eingetragen werden muss. Firefox benötigt allerdings trotzdem eine gesonderte Einstellungen (siehe Browsereinstellungen). %noch aktuelle info??
 
-%\begin{wrapfigure}{r}{0.4\textwidth}
-%  \vspace{-20pt}
-%  \begin{center}
-%    \includegraphics[width=0.48\textwidth,keepaspectratio]{Bilder/Proxy_MAC}
-%  \end{center}
-%  \vspace{-20pt}
-%  \caption{Beispielhafte Proxyeinstellungen unter Mac OS~X}
-%  \vspace{-10pt}
-%\end{wrapfigure}
-\begin{enumerate}%WTF 1. punkt???
-    \item Öffnen Sie mit dem Button \emph{Weitere Optionen...} im voherigen Dialog die Detaileinstellungen und wechseln sie auf die Registerkarte \emph{Proxies}
-    \item Setzen sie bei Zu konfigurierendes Protokoll vor Autom. Proxy-Konfiguration einen Hacken und tragen rechts bei URL \url{http://wpad.stusta.mhn.de/proxy.pac} ein. Schließen Sie die Detaileinstellungen mit OK und bestätigen Sie erneut mit Anwenden. Sie können die Netzwerkeinstellungen jetzt schließen.
-\end{enumerate}
+\subsection*{Globaler Proxy andere Geräte}
+Wenn du Probleme hast, kann du versuchen im Internet nach Anleitungen für dein Gerät in Verbindung mit den Schlagworten \textit{Proxy Einrichtung} suchen.
 
-\newpage
+\subsection*{Browser}
+Die meisten Browser wie Chrome, Firefox und Edge nutzen mittlerweile standardmäßig den Proxy des Betriebssystems wie in Kapitel~\ref{sec:proxy} eingerichtet.
 
-\section*{Proxy-Konfiguration im Browser (nur Nicht-Mitglieder)}
-\label{Proxy}
+Somit ist eine getrennte Konfiguration nicht notwendig
 
-\begin{wrapfigure}{r}{0.5\textwidth}
-	\vspace{-40pt}
-	\begin{center}
-		\includegraphics[width=0.5\textwidth,keepaspectratio]{Bilder/Firefox_neu_proxy}
-	\end{center}
-	%  \vspace{-20pt}
-%	\caption{Eintragen des Proxyskripts in Mozilla Firefox}
-	%  \vspace{-10pt}
-\end{wrapfigure}
-
-\subsection*{\includegraphics[height=1.2cm,keepaspectratio]{Bilder/Firefox_35_logo} Mozilla Firefox}
-\begin{enumerate}
-	\item Klicken Sie auf die 3 übereinanderliegenden Striche in der rechten oberen Ecke, wählen Sie danach \emph{Einstellungen}.
-	\item Gehen Sie zum Punkt \emph{Verbindungs-Einstellungen} und wählen diesen aus.
-	\item Markieren Sie den Punkt \emph{Automatische Proxy-Konfigurations-Adresse} und tragen Sie als Automatische Proxy-Konfigurations-URL: \\ \url{http://wpad.stusta.mhn.de/proxy.pac} ein.
-	\item Bestätigen Sie mit OK .\\
-	\\
-	\\
-\end{enumerate}
-
-
-
-
-\subsection*{\includegraphics[height=1.2cm,keepaspectratio]{Bilder/Chrome_2011_logo} Google Chrome}
-\begin{enumerate}
-	\item Chrome starten.
-	\item Klicken Sie auf die 3 übereinanderliegenden Striche in der rechten oberen Ecke, wählen Sie danach \emph{Einstellungen}.
-	\item Wählen Sie den Punkt \emph{Erweiterte Einstellungen anzeigen}.
-	\item Klicken Sie auf \emph{Proxy-Einstellungen des Computers öffnen}.
-	\\
-	\\
-\end{enumerate}
-
-%\newpage
-%\begin{wrapfigure}{r}{0.5\textwidth}
-%%  \vspace{-20pt}
-%  \begin{center}
-%    \includegraphics[width=0.5\textwidth,keepaspectratio]{Bilder/Proxy_Opera}
-%  \end{center}
-%%  \vspace{-20pt}
-%  \caption{Eintragen des Proxyskripts im Opera}
-%%  \vspace{-10pt}
-%\end{wrapfigure}
-%
-%\subsection*{\includegraphics[height=1.2cm,keepaspectratio]{Bilder/Opera_O} Opera}
-%\begin{enumerate}
-%    \item Opera starten.
-%    \item Wählen Sie im Untermenü Extras den Punkt Einstellungen...
-%    \item Wählen Sie im Reiter Erweitert auf der linken Seite die Kategorie Netzwerk und dann klicken Sie auf den Button Proxy.
-%    \item Setzen Sie bei Automatische Proxykonfiguration verwenden (Skript) einen Haken und tragen Sie \\ \url{http://wpad.mb67.stusta.mhn.de/proxy.pac} ein.
-%    \item Schließen Sie beide Fenster mit OK.
-%\end{enumerate}
-%$\rightarrow$ Der Internetzugang ist nun fertig konfiguriert.
-
-
+\section{Kontrolle \& Debugging}
+\label{sec:debugging}
+Zur Kontrolle kann man versuchen aus dem Zimmeranschluss (nicht Handynetz!) die folgenden Seiten aufzurufen.
+\begin{itemize}
+	\item \url{http://selftest.stustanet.de}
+	\begin{itemize}
+		\item Rudimentäre Selbstdiagnose
+	\end{itemize}
+	\item \url{https://wiki.stusta.de}
+	\begin{itemize}
+		\item StuSta-Internes Wiki
+		\item Bei Fehler Hinweis auf Problem bei IP-Konfiguration aus Kapitel~\ref{sec:network_address} oder dem Anschluss des Router/Computers aus Kapitel~\ref{sec:general}.
+		\item Falls aufrufbar, aber andere Seiten nicht, Hinweis auf Probleme mit Proxykonfiguration aus Kapitel~\ref{sec:proxy}.
+	\end{itemize}
+\end{itemize}
+Weitere Hilfen gibt es auf \mbox{\url{https://stustanet.de/de/support/}}.
 \end{document}
