@@ -82,7 +82,7 @@ Bei weiteren Problemen kann \mbox{\url{https://stustanet.de/de/support/}} weiter
 
 \subsection*{Netzwerkeinstellungen mit den jeweiligen Proxy-Konfigurationen}
 
-Pro Anschluss stehen 8 IP-Adressen zur Verfügung. Der jeweilige Adressbereich ist auf der Netzwerkdose vermerkt oder auf dem Internetkonfigurationsblatt zu finden, das Sie mit Ihrem Mietvertrag von der Hausverwaltung erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. % \footnote{Christoph-Probst-Straße 10, Studentenstadt Freimann}.
+Pro Anschluss stehen 16 IP-Adressen zur Verfügung. Der jeweilige Adressbereich ist auf der Netzwerkdose vermerkt oder auf dem Internetkonfigurationsblatt zu finden, das Sie mit Ihrem Mietvertrag von der Hausverwaltung erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. % \footnote{Christoph-Probst-Straße 10, Studentenstadt Freimann}.
 
 
 
@@ -92,7 +92,7 @@ Pro Anschluss stehen 8 IP-Adressen zur Verfügung. Der jeweilige Adressbereich i
     \hline
     Einstellung & Wert & Beispiel \\
     \hline \hline
-    IP-Adresse & \nolinkurl{10.150.xxx.yyy} - \nolinkurl{10.150.xxx.zzz}, \newline 8 Adressen stehen zur Auswahl\footnote{Auffindbar auf der Netzwerkdose im Zimmer, auf dem IP-Zettel, bei der Hausverwaltung oder in der Sprechstunde.} & \nolinkurl{10.150.243.16} – \nolinkurl{10.150.243.23} \\
+    IP-Adresse & \nolinkurl{10.142.xxx.yyy} - \nolinkurl{10.142.xxx.zzz}, \newline 16 Adressen stehen zur Auswahl\footnote{Auffindbar auf dem IP-Zettel, bei der Hausverwaltung oder in der Sprechstunde.} & \nolinkurl{10.142.128.16} – \nolinkurl{10.142.128.31} \\
     \hline
     Subnetzmaske & \nolinkurl{255.255.255.0} & \\
     \hline
@@ -100,7 +100,7 @@ Pro Anschluss stehen 8 IP-Adressen zur Verfügung. Der jeweilige Adressbereich i
     \hline
     Standardgateway & \nolinkurl{10.150.xxx.254} \newline (Die ersten drei Blöcke wie IP-Adresse, der vierte Block \nolinkurl{254}) & \nolinkurl{10.150.243.254} \\
     \hline
-    DNS-Server (Nameserver) & \nolinkurl{10.150.127.2} \newline \nolinkurl{10.150.125.2} & \\
+    DNS-Server (Nameserver) & \nolinkurl{10.142.0.2} \newline \nolinkurl{10.142.0.3} & \\
     \hline
     DNS-Suffix (Domainname) & \nolinkurl{stusta.mhn.de} & \\
     \hline
@@ -214,7 +214,7 @@ Unter Windows haben Sie die Möglichkeit den Proxy global zu definieren.
 			\vspace{-15pt}
 		\end{minipage}
 	\end{figure}
-	\item Jetzt geben Sie IP-Adresse, Subnetzmaske, Gateway, DNS und Suchdomäne ein. Die Adressen der DNS-Server lauten \textbf{10.150.127.2} und \textbf{10.150.125.2}, die Suchdomäne \textbf{stusta.mhn.de} und die Netzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie einen neuen Zettel benötigen, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. Bestätigen Sie mit \emph{OK} und schließen Sie das Fenster für die Netzwerkeinstellungen.
+	\item Jetzt geben Sie IP-Adresse, Subnetzmaske, Gateway, DNS und Suchdomäne ein. Die Adressen der DNS-Server lauten \textbf{10.142.0.2} und \textbf{10.142.0.3}, die Suchdomäne \textbf{stusta.mhn.de} und die Netzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie einen neuen Zettel benötigen, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. Bestätigen Sie mit \emph{OK} und schließen Sie das Fenster für die Netzwerkeinstellungen.
 \end{enumerate}
 
 \paragraph*{Proxy global einstellen} ~\\
@@ -243,7 +243,7 @@ Unter Linux haben Sie die Möglichkeit den Proxy global zu definieren, sodass di
     \item Öffnen Sie die Netzwerkkonfiguration durch Klick auf \emph{Apfel} (oben links) und wählen dann \emph{Systemeinstellungen} $\rightarrow$ \emph{Netzwerk} aus.
     \item Markieren Sie nun das Netzwerkgerät \emph{Ethernet}.
     \item Setzen Sie das Feld \emph{IPv4 Konfigurieren} auf \emph{Manuell}.
-    \item Jetzt geben Sie IP-Adresse, Teilnetzmaske, Gateway, DNS-Server und Such-Domains ein. Die Adressen der DNS-Server lauten \textbf{10.150.127.2} und \textbf{10.150.125.2}, die Such-Domains \textbf{stusta.mhn.de} und die Teilnetzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Internetkonfigurationsblatt, das Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. Bestätigen Sie mit \emph{Anwenden}.
+    \item Jetzt geben Sie IP-Adresse, Teilnetzmaske, Gateway, DNS-Server und Such-Domains ein. Die Adressen der DNS-Server lauten \textbf{10.142.0.2} und \textbf{10.142.0.3}, die Such-Domains \textbf{stusta.mhn.de} und die Teilnetzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Internetkonfigurationsblatt, das Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. Bestätigen Sie mit \emph{Anwenden}.
       \begin{figure}[h!]
       \centering
 %      \vspace{-5pt}
