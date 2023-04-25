@@ -53,7 +53,8 @@ In der StuSta gibt es kein zentrales WLAN, allerdings kann jeder selbst einen Ac
 %\pagebreak
 
 \section*{Mitgliedschaft StuStaNet~e.V.}
-Es gibt zwei Möglichkeiten im Internet zu surfen. Ohne Mitgliedschaft ist der Zugang über den Proxyserver möglich. Dieser muss bei jeder Applikation eingestellt werden, falls dies unterstützt wird. Einige Software unterstützt die manuelle Proxyeinrichtung nicht, zum Beispiel Programme wie WhatsApp oder League of Legends. Damit diese funktionieren ist eine Mitgliedschaft notwendig.
+Es gibt zwei Möglichkeiten im Internet zu surfen. Ohne Mitgliedschaft ist der Zugang über den Proxyserver möglich. Dieser muss bei jeder Applikation eingestellt werden, falls dies unterstützt wird. Einige Software unterstützt die manuelle Proxyeinrichtung nicht, zum Beispiel Programme wie WhatsApp oder League of Legends.
+Damit diese funktionieren ist eine Mitgliedschaft notwendig.
 \pagebreak\linebreak
 Als Mitglied erfolgt der Zugang über unser NAT-Gateway. Die Konfiguration des Proxys kann dann entfallen. Außerdem stehen für Mitglieder des StuStaNet~e.V. weitere Dienste \footnote{\url{https://wiki.stusta.de/Dienste}} wie eine eigene E-Mail-Adresse, Webspace mit PHP und Datenbankunterstützung oder WLAN in Außenbereichen und Gemeinschaftseinrichtungen \footnote{\url{https://stustanet.de/de/wifi/}} zur Verfügung. 
 \\
@@ -81,29 +82,17 @@ Bei weiteren Problemen kann \mbox{\url{https://stustanet.de/de/support/}} weiter
 \pagebreak 
 
 \subsection*{Netzwerkeinstellungen mit den jeweiligen Proxy-Konfigurationen}
-
-Pro Anschluss stehen 16 IP-Adressen zur Verfügung. Der jeweilige Adressbereich ist auf der Netzwerkdose vermerkt oder auf dem Internetkonfigurationsblatt zu finden, das Sie mit Ihrem Mietvertrag von der Hausverwaltung erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. % \footnote{Christoph-Probst-Straße 10, Studentenstadt Freimann}.
-
-
-
-
+\paragraph*{Für Nicht-Mitglieder}~\\
+\\
+Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell der Proxyserver eingestellt werden. Die Verwendung des \emph{Proxyskripts} wird stark empfohlen!
+\\
 \begin{center}
   \begin{tabularx}{\linewidth}{|lXp{.2\linewidth}|}
     \hline
-    Einstellung & Wert & Beispiel \\
+    Einstellung & Wert &\\
     \hline \hline
-    IP-Adresse& \nolinkurl{10.143.xxx.yyy} - \nolinkurl{10.143.xxx.zzz} , \nolinkurl{10.142.xxx.yyy} - \nolinkurl{10.143.xxx.zzz}, \newline 13 Adressen stehen zur Auswahl\footnote{Auffindbar auf dem IP-Zettel, bei der Hausverwaltung oder in der Sprechstunde.} & \nolinkurl{10.142.128.16} – \nolinkurl{10.142.128.31} \\
-    \hline
-    Subnetzmaske & \nolinkurl{255.255.255.240} & \\
-    \hline
-    Subnetzpräfixlänge & \nolinkurl{28} & \\
-    \hline
-    Standardgateway & \nolinkurl{10.1.xxx.254} \newline (Die ersten drei Blöcke wie IP-Adresse, der vierte Block \nolinkurl{254}) & \nolinkurl{10.142.128.17} \\
-    \hline
-    DNS-Server (Nameserver) & \nolinkurl{10.142.0.2} \newline \nolinkurl{10.142.0.3} & \\
-    \hline
-    DNS-Suffix (Domainname) & \nolinkurl{stusta.mhn.de} & \\
-    \hline
+
+
     Proxyskript & \multicolumn{2}{l|}{\nolinkurl{http://wpad.stusta.mhn.de/proxy.pac}} \\
     \hline
     Proxyserver (manuell) & \multicolumn{2}{l|}{\nolinkurl{http://proxy.stusta.mhn.de:3128}} \\
@@ -111,21 +100,6 @@ Pro Anschluss stehen 16 IP-Adressen zur Verfügung. Der jeweilige Adressbereich 
   \end{tabularx}
 \end{center}
 
-\begin{figure}[h!]
-		\centering
-		\begin{minipage}[c]{0.45\linewidth}
-			\centering
-			\includegraphics[width=\linewidth,keepaspectratio]{Bilder/IP_Gerneric}
-		\end{minipage}
-	\end{figure}
-
-\paragraph*{Für Nicht-Mitglieder}~\\
-\\
-Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell der Proxyserver eingestellt werden. Die Verwendung des \emph{Proxyskripts} wird stark empfohlen!
-
-
-\newpage
-\enlargethispage{20pt}
 
 
 \begin{figure}[h]
