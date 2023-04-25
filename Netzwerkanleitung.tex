@@ -53,7 +53,8 @@ In der StuSta gibt es kein zentrales WLAN, allerdings kann jeder selbst einen Ac
 %\pagebreak
 
 \section*{Mitgliedschaft StuStaNet~e.V.}
-Es gibt zwei Möglichkeiten im Internet zu surfen. Ohne Mitgliedschaft ist der Zugang über den Proxyserver möglich. Dieser muss bei jeder Applikation eingestellt werden, falls dies unterstützt wird. Einige Software unterstützt die manuelle Proxyeinrichtung nicht, zum Beispiel Programme wie WhatsApp oder League of Legends. Damit diese funktionieren ist eine Mitgliedschaft notwendig.
+Es gibt zwei Möglichkeiten im Internet zu surfen. Ohne Mitgliedschaft ist der Zugang über den Proxyserver möglich. Dieser muss bei jeder Applikation eingestellt werden, falls dies unterstützt wird. Einige Software unterstützt die manuelle Proxyeinrichtung nicht, zum Beispiel Programme wie WhatsApp oder League of Legends.
+Damit diese funktionieren ist eine Mitgliedschaft notwendig.
 \pagebreak\linebreak
 Als Mitglied erfolgt der Zugang über unser NAT-Gateway. Die Konfiguration des Proxys kann dann entfallen. Außerdem stehen für Mitglieder des StuStaNet~e.V. weitere Dienste \footnote{\url{https://wiki.stusta.de/Dienste}} wie eine eigene E-Mail-Adresse, Webspace mit PHP und Datenbankunterstützung oder WLAN in Außenbereichen und Gemeinschaftseinrichtungen \footnote{\url{https://stustanet.de/de/wifi/}} zur Verfügung. 
 \\
@@ -81,29 +82,17 @@ Bei weiteren Problemen kann \mbox{\url{https://stustanet.de/de/support/}} weiter
 \pagebreak 
 
 \subsection*{Netzwerkeinstellungen mit den jeweiligen Proxy-Konfigurationen}
-
-Pro Anschluss stehen 8 IP-Adressen zur Verfügung. Der jeweilige Adressbereich ist auf der Netzwerkdose vermerkt oder auf dem Internetkonfigurationsblatt zu finden, das Sie mit Ihrem Mietvertrag von der Hausverwaltung erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. % \footnote{Christoph-Probst-Straße 10, Studentenstadt Freimann}.
-
-
-
-
+\paragraph*{Für Nicht-Mitglieder}~\\
+\\
+Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell der Proxyserver eingestellt werden. Die Verwendung des \emph{Proxyskripts} wird stark empfohlen!
+\\
 \begin{center}
   \begin{tabularx}{\linewidth}{|lXp{.2\linewidth}|}
     \hline
-    Einstellung & Wert & Beispiel \\
+    Einstellung & Wert &\\
     \hline \hline
-    IP-Adresse & \nolinkurl{10.150.xxx.yyy} - \nolinkurl{10.150.xxx.zzz}, \newline 8 Adressen stehen zur Auswahl\footnote{Auffindbar auf der Netzwerkdose im Zimmer, auf dem IP-Zettel, bei der Hausverwaltung oder in der Sprechstunde.} & \nolinkurl{10.150.243.16} – \nolinkurl{10.150.243.23} \\
-    \hline
-    Subnetzmaske & \nolinkurl{255.255.255.0} & \\
-    \hline
-    Subnetzpräfixlänge & \nolinkurl{24} & \\
-    \hline
-    Standardgateway & \nolinkurl{10.150.xxx.254} \newline (Die ersten drei Blöcke wie IP-Adresse, der vierte Block \nolinkurl{254}) & \nolinkurl{10.150.243.254} \\
-    \hline
-    DNS-Server (Nameserver) & \nolinkurl{10.150.127.2} \newline \nolinkurl{10.150.125.2} & \\
-    \hline
-    DNS-Suffix (Domainname) & \nolinkurl{stusta.mhn.de} & \\
-    \hline
+
+
     Proxyskript & \multicolumn{2}{l|}{\nolinkurl{http://wpad.stusta.mhn.de/proxy.pac}} \\
     \hline
     Proxyserver (manuell) & \multicolumn{2}{l|}{\nolinkurl{http://proxy.stusta.mhn.de:3128}} \\
@@ -111,21 +100,6 @@ Pro Anschluss stehen 8 IP-Adressen zur Verfügung. Der jeweilige Adressbereich i
   \end{tabularx}
 \end{center}
 
-\begin{figure}[h!]
-		\centering
-		\begin{minipage}[c]{0.45\linewidth}
-			\centering
-			\includegraphics[width=\linewidth,keepaspectratio]{Bilder/IP_Gerneric}
-		\end{minipage}
-	\end{figure}
-
-\paragraph*{Für Nicht-Mitglieder}~\\
-\\
-Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell der Proxyserver eingestellt werden. Die Verwendung des \emph{Proxyskripts} wird stark empfohlen!
-
-
-\newpage
-\enlargethispage{20pt}
 
 
 \begin{figure}[h]
@@ -136,33 +110,6 @@ Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell de
 \end{figure}
 
 \subsubsection*{Schritt für Schritt Anleitung Windows}
-
-\paragraph*{Windows 10}
-\begin{wrapfigure}[9]{R}{0.3\textwidth}
-	\centering
-	\includegraphics[width=0.3\textwidth]{Bilder/IP_Windows}
-	%  \caption{Bildunterschrift}
-\end{wrapfigure}
-
-\begin{enumerate}
-	\item Klicken Sie auf das Windowssymbol in der unteren linken Ecke und anschließend auf \emph{Einstellungen}
-	\item Klicken Sie auf \textit{Netzwerk und Internet}. Scrollen Sie runter bis \textit{Netzwerk und Freigabecenter} und klicken auf diesen Punkt. Wählen Sie in der linken Spalte den Punkt \textit{Adaptereinstellungen ändern}. Sollten Sie diesen Punkt nicht finden können Sie auch in der Suchzeile rechts oben nach \glqq Adaptereinstellungen ändern\grqq suchen.
-%	\begin{figure}[h!]
-%	\centering
-%		\begin{minipage}[c]{0.3\linewidth}
-%			\centering
-%			\includegraphics[width=0.9\linewidth,keepaspectratio]{Bilder/IP_Windows}
-%			\caption{Beispielhafte Netzwerkeinstellungen unter Ubuntu Linux}
-%			\vspace{-15pt}
-%		\end{minipage}
-%	\end{figure}
-
-    \item Ihnen sollten nun mehrere Netzwerkverbindungen aufgelistet sein. Klicken Sie mit der \textbf{rechten} Maustaste auf \textit{Ethernet} und klicken Sie dann auf \textit{Eigenschaften}.
-    \item Markieren Sie den Eintrag \textit{Internetprotokoll Version 4 (TCP/IPv4)} (Windows 8/10) und klicken Sie danach auf Eigenschaften.
-    \item Jetzt geben Sie IP-Adresse, Subnetzmaske/Subnetzpräfixlänge, Standardgateway und DNS Server ein. Die Adressen der DNS-Server lauten \textbf{10.150.127.2} und \textbf{10.150.125.2}, die Subnetzmaske \textbf{255.255.255.0} bzw. Subnetzpräfixlänge \textbf{24}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie keinen Zettel mit Netzwerkdaten bekommen haben und der Aufkleber auf der Anschlussbuchse unlesbar sein, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde.
-    \item Klicken Sie auf Erweitert und wählen im folgenden Dialog den Reiter DNS aus. Tragen Sie im Feld DNS-Suffix für diese Verbindung \textbf{stusta.mhn.de} ein.
-    \item Bestätigen mit OK.
-\end{enumerate}
 
 \begin{wrapfigure}{r}{0.4\textwidth}
 	%  \vspace{-20pt}
@@ -200,23 +147,6 @@ Unter Windows haben Sie die Möglichkeit den Proxy global zu definieren.
 
 \subsubsection*{Schritt für Schritt Anleitung Linux}
 
-\begin{enumerate}
-	\item Öffnen Sie die Netzwerkkonfiguration durch Klick auf \emph{System} $\rightarrow$ \emph{Einstellungen} $\rightarrow$ \emph{Netzwerkkonfiguration}.
-	\item Markieren Sie nun im Reiter Kabelgebunden den entsprechenden Eintrag Ihrer Netzwerkkarte (im Normalfall \emph{eth0}) und klicken Sie auf den Button \emph{Bearbeiten}.
-	\item Gehen Sie zum Reiter \emph{IPv4-Einstellungen} und setzen Sie Methode auf \emph{Manuell}.
-	\item Unter \emph{Adressen} klicken Sie auf den Button \emph{Hinzufügen}.
-	\begin{figure}[h!]
-	\centering
-		\begin{minipage}[c]{0.5\linewidth}
-			\centering
-			\includegraphics[width=0.9\linewidth,keepaspectratio]{Bilder/IP_Ubuntu_neu}
-%			\caption{Beispielhafte Netzwerkeinstellungen unter Ubuntu Linux}
-			\vspace{-15pt}
-		\end{minipage}
-	\end{figure}
-	\item Jetzt geben Sie IP-Adresse, Subnetzmaske, Gateway, DNS und Suchdomäne ein. Die Adressen der DNS-Server lauten \textbf{10.150.127.2} und \textbf{10.150.125.2}, die Suchdomäne \textbf{stusta.mhn.de} und die Netzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Zettel, den Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie einen neuen Zettel benötigen, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. Bestätigen Sie mit \emph{OK} und schließen Sie das Fenster für die Netzwerkeinstellungen.
-\end{enumerate}
-
 \paragraph*{Proxy global einstellen} ~\\
 \\
 Unter Linux haben Sie die Möglichkeit den Proxy global zu definieren, sodass dieser nicht extra für jedes Programm eingetragen werden muss.
@@ -239,23 +169,8 @@ Unter Linux haben Sie die Möglichkeit den Proxy global zu definieren, sodass di
 	\vspace{-30pt}
 \end{figure}
 \subsubsection*{Schritt für Schritt Anleitung MacOS}
-\begin{enumerate}
-    \item Öffnen Sie die Netzwerkkonfiguration durch Klick auf \emph{Apfel} (oben links) und wählen dann \emph{Systemeinstellungen} $\rightarrow$ \emph{Netzwerk} aus.
-    \item Markieren Sie nun das Netzwerkgerät \emph{Ethernet}.
-    \item Setzen Sie das Feld \emph{IPv4 Konfigurieren} auf \emph{Manuell}.
-    \item Jetzt geben Sie IP-Adresse, Teilnetzmaske, Gateway, DNS-Server und Such-Domains ein. Die Adressen der DNS-Server lauten \textbf{10.150.127.2} und \textbf{10.150.125.2}, die Such-Domains \textbf{stusta.mhn.de} und die Teilnetzmaske \textbf{255.255.255.0}. Ihre jeweilige IP-Adresse steht auf einem Aufkleber auf Ihrer Anschlussbuchse bzw. auf dem Internetkonfigurationsblatt, das Sie mit Ihrem Mietvertrag erhalten haben. Sollten Sie dieses Blatt nicht mehr finden, wenden Sie sich bitte an die Hausverwaltung oder besuchen Sie unsere Sprechstunde. Bestätigen Sie mit \emph{Anwenden}.
-      \begin{figure}[h!]
-      \centering
-%      \vspace{-5pt}
-        \begin{minipage}[c]{0.60\linewidth}
-          \centering
-          \includegraphics[width=0.9\linewidth,keepaspectratio]{Bilder/IP_MAC}
-%          \caption{Beispielhafte Netzwerkeinstellungen unter Mac OS~X}
-        \end{minipage}
-      \vspace{-20pt}
-      \end{figure}
-\end{enumerate}
-\vspace{-10pt}
+
+
 \paragraph*{Proxy global einstellen}~\\
 \\
 Unter MacOS haben Sie die Möglichkeit den Proxy global zu definieren, sodass dieser nicht extra für jedes Programm eingetragen werden muss. Firefox benötigt allerdings trotzdem eine gesonderte Einstellungen (siehe Browsereinstellungen). %noch aktuelle info??
