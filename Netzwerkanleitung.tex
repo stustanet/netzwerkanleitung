@@ -46,7 +46,7 @@ Der StuStaNet~e.V. betreibt eine Schadsoftwareerkennung, die Anschlüsse bei Auf
 \end{bfseries}
 \\
 \\
-In der StuSta gibt es kein zentrales WLAN, allerdings kann jeder selbst einen Access Point betreiben. In den Einstellungen des Routers/AP muss eine der Zimmer-IPs, sowie Gateway, Subnetzmakse und DNS eingestellt werden. Der StuStaNet~e.V. verkauft für die StuSta passend vorkonfigurierte Geräte in der Sprechstunde (nur an Mitglieder).
+In der StuSta gibt es kein zentrales WLAN, allerdings kann jeder selbst einen Access Point betreiben. Der StuStaNet~e.V. verkauft für die StuSta passend vorkonfigurierte Geräte in der Sprechstunde (nur an Mitglieder).
 
 
 
@@ -67,14 +67,13 @@ Die genauen Zeiten sind unter \mbox{\url{https://stustanet.de}} verfügbar.
 \section*{Netzwerkkonfiguration}
 \subsection*{Verbinden eines Computers oder eines Routers mit der Netzwerkdose}
 
-Das Einrichten der Internetanbindung besteht aus folgenden Teilen:
+Das Einrichten der Internetanbindung besteht aus folgen den Teilen:
 \begin{itemize}
 	\item Anschluss an die Netzwerkbuchse
-	\item Es ist keine manuelle Konfiguration mehr nötig. Dies geschieht automatisch mithilfe von DHCP.
+	\item Die Einrichtung des Internets geschieht nun automatisch mithilfe von DHCP
 	\item (Nur für Nicht-Mitglieder) Eintragen des Proxyservers bzw. -skripts im Browser
 \end{itemize}
 Verwenden Sie ausschließlich die \emph{linke} Netzwerkbuchse.\\
-Falls der Router mit den Netzwerkeinstellungen konfiguriert wird, so darf das Betriebssystem nicht auch konfiguriert werden!\\
 Sollten Probleme bei der Verbindung zum Netzwerk auftreten, so ist der Besuch der Seite\\
 \mbox{\url{http://selftest.stustanet.de}} hilfreich, während man mit dem nicht funktionierenden Netz verbunden ist. Hierbei wird eine Diagnose erstellt. Falls die Seite nicht erreichbar ist oder eine Fehlermeldung angezeigt wird, so ist die Netzwerkkonfiguration fehlerhaft.\\
 Bei weiteren Problemen kann \mbox{\url{https://stustanet.de/de/support/}} weiterhelfen.
@@ -91,8 +90,6 @@ Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell de
     \hline
     Einstellung & Wert &\\
     \hline \hline
-
-
     Proxyskript & \multicolumn{2}{l|}{\nolinkurl{http://wpad.stusta.mhn.de/proxy.pac}} \\
     \hline
     Proxyserver (manuell) & \multicolumn{2}{l|}{\nolinkurl{http://proxy.stusta.mhn.de:3128}} \\
@@ -109,7 +106,7 @@ Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell de
 	\vspace{-30pt}
 \end{figure}
 
-\subsubsection*{Schritt für Schritt Anleitung Windows}
+\subsubsection*{Anleitung fürs die globale Einstellung des Proxys unter Windows}
 
 \begin{wrapfigure}{r}{0.4\textwidth}
 	%  \vspace{-20pt}
@@ -121,7 +118,6 @@ Bei Nicht-Mitgliedschaft muss entweder das Proxyskript verwendet oder manuell de
 	%  \vspace{-10pt}
 \end{wrapfigure}
 
-\paragraph*{Proxy global einstellen} ~\\
 
 Unter Windows haben Sie die Möglichkeit den Proxy global zu definieren.
 
@@ -145,9 +141,9 @@ Unter Windows haben Sie die Möglichkeit den Proxy global zu definieren.
 
 
 
-\subsubsection*{Schritt für Schritt Anleitung Linux}
+\subsubsection*{Anleitung fürs die globale Einstellung des Proxys unter Linux}
 
-\paragraph*{Proxy global einstellen} ~\\
+\paragraph*{} ~\\
 \\
 Unter Linux haben Sie die Möglichkeit den Proxy global zu definieren, sodass dieser nicht extra für jedes Programm eingetragen werden muss.
 \begin{enumerate}
@@ -168,10 +164,8 @@ Unter Linux haben Sie die Möglichkeit den Proxy global zu definieren, sodass di
 	\includegraphics[height=1cm,keepaspectratio]{Bilder/apple_logo_neu}
 	\vspace{-30pt}
 \end{figure}
-\subsubsection*{Schritt für Schritt Anleitung MacOS}
+\subsubsection*{Anleitung fürs die globale Einstellung des Proxys unter MacOS}
 
-
-\paragraph*{Proxy global einstellen}~\\
 \\
 Unter MacOS haben Sie die Möglichkeit den Proxy global zu definieren, sodass dieser nicht extra für jedes Programm eingetragen werden muss. Firefox benötigt allerdings trotzdem eine gesonderte Einstellungen (siehe Browsereinstellungen). %noch aktuelle info??
 
